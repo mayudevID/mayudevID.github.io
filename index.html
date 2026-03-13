@@ -1,0 +1,152 @@
+---
+---
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MayudevID | Mobile Developer Portfolio</title>
+    <meta name="description" content="MayudevID - Maulana Yusuf - Mobile Developer Portofolio" />
+    <meta name="author" content="Maulana Yusuf" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://mayudevid.github.io/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:site_name" content="MayudevID" />
+    <meta property="og:title" content="MayudevID | Mobile Developer Portfolio" />
+    <meta property="og:description" content="MayudevID - Maulana Yusuf - Mobile Developer Portofolio" />
+    <meta property="og:url" content="https://mayudevid.github.io/" />
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/mayudevID/bloom/main/assets/images/cover.png" />
+    <meta property="og:image:alt" content="Preview portfolio MayudevID karya Maulana Yusuf" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@mayudevID" />
+    <meta name="twitter:title" content="MayudevID | Mobile Developer Portfolio" />
+    <meta name="twitter:description"
+        content="MayudevID - Portfolio Maulana Yusuf, Mobile Developer Flutter dan Kotlin untuk Android dan iOS." />
+    <meta name="twitter:image"
+        content="https://raw.githubusercontent.com/mayudevID/bloom/main/assets/images/cover.png" />
+    <meta name="twitter:image:alt" content="Preview portfolio MayudevID karya Maulana Yusuf" />
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Maulana Yusuf",
+            "alternateName": "MayudevID",
+            "jobTitle": "Mobile Developer",
+            "url": "https://mayudevid.github.io/",
+            "email": "mailto:ymaulana089@gmail.com",
+            "telephone": "+6285811591353",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Tangerang Selatan",
+                "addressCountry": "ID"
+            },
+            "sameAs": [
+                "https://github.com/mayudevID",
+                "https://www.linkedin.com/in/maulana-yusuf-b87393201"
+            ]
+        }
+    </script>
+
+    <style>
+        :root {
+            --fg: #0f172a;
+            --muted: #334155;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --line: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            color: var(--fg);
+            background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
+            line-height: 1.65;
+        }
+
+        main {
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 28px 20px 64px;
+        }
+
+        article {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+        }
+
+        .brand-strip {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 18px;
+            padding: 8px 14px;
+            border-radius: 999px;
+            border: 1px solid #99f6e4;
+            background: #ecfeff;
+            color: #0f766e;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .brand-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 999px;
+            background: #14b8a6;
+        }
+
+        img {
+            display: block;
+            margin: 8px 0 16px;
+            max-width: 100%;
+        }
+
+        h1,
+        h2,
+        h3 {
+            line-height: 1.25;
+        }
+
+        p,
+        li {
+            color: var(--muted);
+        }
+
+        a {
+            color: #0f766e;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid var(--line);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <article>
+            <div class="brand-strip"><span class="brand-dot"></span>MayudevID</div>
+            {% capture portfolio_markdown %}{% include_relative portfolio.md %}{% endcapture %}
+            {{ portfolio_markdown | markdownify }}
+        </article>
+    </main>
+</body>
+
+</html>

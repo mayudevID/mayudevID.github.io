@@ -1,6 +1,6 @@
-# Maulana Yusuf
+# MayudevID - Maulana Yusuf
 
-Mobile Developer (Flutter) yang juga berfokus pada pengembangan aplikasi Android dan iOS.
+Brand personal untuk karya dan perjalanan saya sebagai Mobile Developer (Flutter), berfokus pada pengembangan aplikasi Android dan iOS.
 
 - Lokasi: Tangerang Selatan
 - Email: [ymaulana089@gmail.com](mailto:ymaulana089@gmail.com)
