@@ -3,10 +3,10 @@
 Mobile Developer (Flutter) yang juga berfokus pada pengembangan aplikasi Android dan iOS.
 
 - Lokasi: Tangerang Selatan
-- Email: ymaulana089@gmail.com
-- Phone: +62 858-1159-1353
-- LinkedIn: https://www.linkedin.com/in/maulana-yusuf-b87393201
-- GitHub: https://github.com/mayudevID
+- Email: [ymaulana089@gmail.com](mailto:ymaulana089@gmail.com)
+- Phone: [+62 858-1159-1353](tel:+6285811591353)
+- LinkedIn: [linkedin.com/in/maulana-yusuf-b87393201](https://www.linkedin.com/in/maulana-yusuf-b87393201)
+- GitHub: [github.com/mayudevID](https://github.com/mayudevID)
 
 [![Unduh CV](https://img.shields.io/badge/Unduh%20CV-PDF-0f766e?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](./cv_maulana_yusuf.pdf)
 
@@ -92,7 +92,7 @@ S1 Sistem Informasi | Sep 2020 - Jul 2024
 ## Proyek Unggulan
 
 ### 1. Bloom - Productivity App
-![Bloom Cover](https://raw.githubusercontent.com/mayudevID/bloom/main/assets/images/cover.png)
+<img src="https://raw.githubusercontent.com/mayudevID/bloom/main/assets/images/cover.png" alt="Bloom Cover" style="width:100%;max-width:760px;height:auto;border-radius:12px;" />
 
 Bloom adalah aplikasi produktivitas harian dengan fitur To-do List, Pomodoro Timer, Habit Tracker, dan reminder berbasis notifikasi.
 
@@ -108,10 +108,10 @@ Bloom adalah aplikasi produktivitas harian dengan fitur To-do List, Pomodoro Tim
 - Offline persistence: `shared_preferences`
 - Network awareness: `connectivity_plus`
 
-Repository: https://github.com/mayudevID/bloom
+Repository: [github.com/mayudevID/bloom](https://github.com/mayudevID/bloom)
 
 ### 2. Cling! - Money Management App
-![Cling Cover](https://raw.githubusercontent.com/mayudevID/cling/main/assets/cover.jpg)
+<img src="https://raw.githubusercontent.com/mayudevID/cling/main/assets/cover.jpg" alt="Cling Cover" style="width:100%;max-width:760px;height:auto;border-radius:12px;" />
 
 Cling! adalah aplikasi money management untuk tracking pemasukan-pengeluaran, budgeting, dan monitoring kondisi finansial.
 
@@ -128,10 +128,10 @@ Cling! adalah aplikasi money management untuk tracking pemasukan-pengeluaran, bu
 - Local key-value storage: `shared_preferences`
 - Network awareness: `connectivity_plus`
 
-Repository: https://github.com/mayudevID/cling
+Repository: [github.com/mayudevID/cling](https://github.com/mayudevID/cling)
 
 ### 3. KBBI Daring App
-![KBBI Daring Cover](https://raw.githubusercontent.com/mayudevID/kbbi_daring_app/master/cover.png)
+<img src="https://raw.githubusercontent.com/mayudevID/kbbi_daring_app/master/cover.png" alt="KBBI Daring Cover" style="width:100%;max-width:760px;height:auto;border-radius:12px;" />
 
 Aplikasi Android untuk pencarian kosakata KBBI berbasis API daring.
 
@@ -146,7 +146,7 @@ Aplikasi Android untuk pencarian kosakata KBBI berbasis API daring.
 - Async programming: Kotlin Coroutines (`kotlinx-coroutines-android`)
 - Screen navigation: AndroidX Navigation (`navigation-fragment-ktx`, `navigation-ui-ktx`)
 
-Repository: https://github.com/mayudevID/kbbi_daring_app
+Repository: [github.com/mayudevID/kbbi_daring_app](https://github.com/mayudevID/kbbi_daring_app)
 
 ---
 
@@ -154,6 +154,6 @@ Repository: https://github.com/mayudevID/kbbi_daring_app
 
 Terbuka untuk kolaborasi dan peluang kerja full-time di bidang Mobile Development.
 
-- Email: ymaulana089@gmail.com
-- LinkedIn: https://www.linkedin.com/in/maulana-yusuf-b87393201
-- GitHub: https://github.com/mayudevID
+- Email: [ymaulana089@gmail.com](mailto:ymaulana089@gmail.com)
+- LinkedIn: [linkedin.com/in/maulana-yusuf-b87393201](https://www.linkedin.com/in/maulana-yusuf-b87393201)
+- GitHub: [github.com/mayudevID](https://github.com/mayudevID)
