@@ -92,7 +92,7 @@ S1 Sistem Informasi | Sep 2020 - Jul 2024
 ## Proyek Unggulan
 
 ### 1. Bloom - Productivity App
-<img src="https://raw.githubusercontent.com/mayudevID/bloom/main/assets/images/cover.png" alt="Bloom Cover" style="width:100%;max-width:760px;height:auto;border-radius:12px;" />
+<img src="https://raw.githubusercontent.com/mayudevID/bloom/main/assets/images/cover.png" alt="Bloom Cover" style="display:block;width:100%;max-width:620px;height:auto;margin:12px auto 18px;border-radius:12px;" />
 
 Bloom adalah aplikasi produktivitas harian dengan fitur To-do List, Pomodoro Timer, Habit Tracker, dan reminder berbasis notifikasi.
 
@@ -111,7 +111,7 @@ Bloom adalah aplikasi produktivitas harian dengan fitur To-do List, Pomodoro Tim
 Repository: [github.com/mayudevID/bloom](https://github.com/mayudevID/bloom)
 
 ### 2. Cling! - Money Management App
-<img src="https://raw.githubusercontent.com/mayudevID/cling/main/assets/cover.jpg" alt="Cling Cover" style="width:100%;max-width:760px;height:auto;border-radius:12px;" />
+<img src="https://raw.githubusercontent.com/mayudevID/cling/main/assets/cover.jpg" alt="Cling Cover" style="display:block;width:100%;max-width:620px;height:auto;margin:12px auto 18px;border-radius:12px;" />
 
 Cling! adalah aplikasi money management untuk tracking pemasukan-pengeluaran, budgeting, dan monitoring kondisi finansial.
 
@@ -131,7 +131,7 @@ Cling! adalah aplikasi money management untuk tracking pemasukan-pengeluaran, bu
 Repository: [github.com/mayudevID/cling](https://github.com/mayudevID/cling)
 
 ### 3. KBBI Daring App
-<img src="https://raw.githubusercontent.com/mayudevID/kbbi_daring_app/master/cover.png" alt="KBBI Daring Cover" style="width:100%;max-width:760px;height:auto;border-radius:12px;" />
+<img src="https://raw.githubusercontent.com/mayudevID/kbbi_daring_app/master/cover.png" alt="KBBI Daring Cover" style="display:block;width:100%;max-width:620px;height:auto;margin:12px auto 18px;border-radius:12px;" />
 
 Aplikasi Android untuk pencarian kosakata KBBI berbasis API daring.
 
