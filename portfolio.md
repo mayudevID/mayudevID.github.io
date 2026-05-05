@@ -91,7 +91,33 @@ S1 Sistem Informasi | Sep 2020 - Jul 2024
 
 ## Proyek Unggulan
 
-### 1. Bloom - Productivity App
+### 1. Ar-Rauda - Kajian Islam dan Murottal Al-Qur'an
+
+Ar-Rauda adalah aplikasi kajian Islam yang menghadirkan koleksi murottal Al-Qur'an, kajian, dan materi keagamaan lainnya. Aplikasi ini tersedia di Google Play untuk pengguna Android.
+
+**Fitur Utama**
+
+- Notifikasi dan pengingat salat
+- Baca Al-Qur'an
+- Dzikir pagi & petang
+- Roadmap belajar Islam (materi terstruktur)
+- Buat catatan kajian
+- Mendengarkan kajian bersama
+- Kajian Live Streaming
+
+<div style="overflow-x:auto;display:flex;gap:12px;padding:12px 0;-webkit-overflow-scrolling:touch;align-items:center;">
+	<img src="./assets/1.png" alt="Frame 2" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img src="./assets/2.png" alt="Frame 3" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img src="./assets/3.png" alt="Frame 4" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img src="./assets/4.png" alt="Frame 5" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img src="./assets/5.png" alt="Frame 6" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+</div>
+
+Tersedia di Google Play
+
+<a href="https://play.google.com/store/apps/details?id=com.work.arraudhah&hl=id"><img src="./assets/play_store/google_play_badge.png" alt="Get it on Google Play" style="width:200px;height:auto;display:inline-block;" /></a>
+
+### 2. Bloom - Productivity App
 <img src="https://raw.githubusercontent.com/mayudevID/bloom/main/assets/images/cover.png" alt="Bloom Cover" style="display:block;width:100%;max-width:620px;height:auto;margin:12px auto 18px;border-radius:12px;" />
 
 Bloom adalah aplikasi produktivitas harian dengan fitur To-do List, Pomodoro Timer, Habit Tracker, dan reminder berbasis notifikasi.
@@ -110,7 +136,7 @@ Bloom adalah aplikasi produktivitas harian dengan fitur To-do List, Pomodoro Tim
 
 Repository: [github.com/mayudevID/bloom](https://github.com/mayudevID/bloom)
 
-### 2. Cling! - Money Management App
+### 3. Cling! - Money Management App
 <img src="https://raw.githubusercontent.com/mayudevID/cling/main/assets/cover.jpg" alt="Cling Cover" style="display:block;width:100%;max-width:620px;height:auto;margin:12px auto 18px;border-radius:12px;" />
 
 Cling! adalah aplikasi money management untuk tracking pemasukan-pengeluaran, budgeting, dan monitoring kondisi finansial.
@@ -130,7 +156,7 @@ Cling! adalah aplikasi money management untuk tracking pemasukan-pengeluaran, bu
 
 Repository: [github.com/mayudevID/cling](https://github.com/mayudevID/cling)
 
-### 3. KBBI Daring App
+### 4. KBBI Daring App
 <img src="https://raw.githubusercontent.com/mayudevID/kbbi_daring_app/master/cover.png" alt="KBBI Daring Cover" style="display:block;width:100%;max-width:620px;height:auto;margin:12px auto 18px;border-radius:12px;" />
 
 Aplikasi Android untuk pencarian kosakata KBBI berbasis API daring.
