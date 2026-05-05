@@ -97,13 +97,14 @@ Ar-Rauda adalah aplikasi kajian Islam yang menghadirkan koleksi murottal Al-Qur'
 
 **Fitur Utama**
 
+- Kajian Islam & Murottal Al-Qur'an
+- Mendengarkan kajian bersama
+- Kajian Live Streaming
 - Notifikasi dan pengingat salat
-- Baca Al-Qur'an
+- Baca Al-Qur'an dan tajwid
 - Dzikir pagi & petang
 - Roadmap belajar Islam (materi terstruktur)
 - Buat catatan kajian
-- Mendengarkan kajian bersama
-- Kajian Live Streaming
 
 <div style="overflow-x:auto;display:flex;gap:12px;padding:12px 0;-webkit-overflow-scrolling:touch;align-items:center;">
 	<img src="./assets/1.png" alt="Frame 2" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
