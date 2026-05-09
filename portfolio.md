@@ -93,18 +93,18 @@ S1 Sistem Informasi | Sep 2020 - Jul 2024
 
 ### 1. Ar-Rauda - Kajian Islam dan Murottal Al-Qur'an
 
-Ar-Rauda adalah aplikasi kajian Islam yang menghadirkan koleksi murottal Al-Qur'an, kajian, dan materi keagamaan lainnya. Aplikasi ini tersedia di Google Play untuk pengguna Android.
+Ar-Rauda adalah aplikasi kajian Islam yang menghadirkan koleksi murottal Al-Qur'an, kajian, dan materi keagamaan lainnya.
 
 **Fitur Utama**
 
 - Kajian Islam & Murottal Al-Qur'an
 - Mendengarkan kajian bersama
 - Kajian Live Streaming
+- Buat catatan kajian
 - Notifikasi dan pengingat salat
 - Baca Al-Qur'an dan tajwid
 - Dzikir pagi & petang
 - Roadmap belajar Islam (materi terstruktur)
-- Buat catatan kajian
 
 <div style="overflow-x:auto;display:flex;gap:12px;padding:12px 0;-webkit-overflow-scrolling:touch;align-items:center;">
 	<img src="./assets/1.png" alt="Frame 2" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
@@ -114,9 +114,25 @@ Ar-Rauda adalah aplikasi kajian Islam yang menghadirkan koleksi murottal Al-Qur'
 	<img src="./assets/5.png" alt="Frame 6" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
 </div>
 
-Tersedia di Google Play
+Tersedia di Google Play dan App Store
 
-<a href="https://play.google.com/store/apps/details?id=com.work.arraudhah&hl=id"><img src="./assets/play_store/google_play_badge.png" alt="Get it on Google Play" style="width:200px;height:auto;display:inline-block;" /></a>
+<div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+  <a href="https://play.google.com/store/apps/details?id=com.work.arraudhah&hl=id">
+    <img
+      src="./assets/play_store/google_play_badge.png"
+      alt="Get it on Google Play"
+      style="width:200px;height:auto;"
+    />
+  </a>
+
+  <a href="https://apps.apple.com/id/app/ar-rauda/id6762336087">
+    <img
+      src="./assets/app_store/app_store.svg"
+      alt="Download on the App Store"
+      style="width:200px;height:auto;"
+    />
+  </a>
+</div>
 
 ### 2. Bloom - Productivity App
 <img src="https://raw.githubusercontent.com/mayudevID/bloom/main/assets/images/cover.png" alt="Bloom Cover" style="display:block;width:100%;max-width:620px;height:auto;margin:12px auto 18px;border-radius:12px;" />
