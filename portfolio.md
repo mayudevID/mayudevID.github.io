@@ -116,12 +116,12 @@ Ar-Rauda adalah aplikasi kajian Islam yang menghadirkan koleksi murottal Al-Qur'
 
 Tersedia di Google Play dan App Store
 
-<div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+<div style="display:flex; gap:2px; align-items:center; flex-wrap:wrap;">
   <a href="https://play.google.com/store/apps/details?id=com.work.arraudhah&hl=id">
     <img
       src="./assets/play_store/google_play_badge.png"
       alt="Get it on Google Play"
-      style="width:200px;height:auto;"
+      style="width:200px;height:60px;object-fit:contain;"
     />
   </a>
 
@@ -129,7 +129,7 @@ Tersedia di Google Play dan App Store
     <img
       src="./assets/app_store/app_store.svg"
       alt="Download on the App Store"
-      style="width:200px;height:auto;"
+      style="width:200px;height:60px;object-fit:contain;"
     />
   </a>
 </div>
