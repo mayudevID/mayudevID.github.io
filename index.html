@@ -1,7 +1,7 @@
 ---
 ---
 <!doctype html>
-<html lang="id">
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
@@ -11,25 +11,28 @@
     <meta name="author" content="Maulana Yusuf" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://mayudevid.github.io/" />
+    <link rel="alternate" hreflang="id" href="https://mayudevid.github.io/" />
+    <link rel="alternate" hreflang="en" href="https://mayudevid.github.io/" />
+    <link rel="alternate" hreflang="x-default" href="https://mayudevid.github.io/" />
 
     <meta name="google-site-verification" content="vvVXmwxXpFyMHO-Yhf4qhy7qRgbTwD_pnTpD8XuyDLY" />
     <meta property="og:type" content="website" />
-    <meta property="og:locale" content="id_ID" />
+    <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="MayudevID" />
     <meta property="og:title" content="MayudevID | Maulana Yusuf's Portfolio" />
-    <meta property="og:description" content="Tentang proyek, pengalaman, dan karya pengembangan aplikasi." />
+    <meta property="og:description" content="Projects, experience, and mobile application development work." />
     <meta property="og:url" content="https://mayudevid.github.io/" />
     <meta property="og:image"
         content="https://raw.githubusercontent.com/mayudevID/bloom/main/assets/images/cover.png" />
-    <meta property="og:image:alt" content="Tentang proyek, pengalaman, dan karya pengembangan aplikasi." />
+    <meta property="og:image:alt" content="Projects, experience, and mobile application development work." />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@mayudevID" />
     <meta name="twitter:title" content="MayudevID | Maulana Yusuf's Portfolio" />
-    <meta name="twitter:description" content="Tentang proyek, pengalaman, dan karya pengembangan aplikasi." />
+    <meta name="twitter:description" content="Projects, experience, and mobile application development work." />
     <meta name="twitter:image"
         content="https://raw.githubusercontent.com/mayudevID/bloom/main/assets/images/cover.png" />
-    <meta name="twitter:image:alt" content="Tentang proyek, pengalaman, dan karya pengembangan aplikasi." />
+    <meta name="twitter:image:alt" content="Projects, experience, and mobile application development work." />
 
     <script type="application/ld+json">
         {
@@ -104,6 +107,57 @@
             text-transform: uppercase;
         }
 
+        .topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 18px;
+            flex-wrap: wrap;
+        }
+
+        .topbar .brand-strip {
+            margin-bottom: 0;
+        }
+
+        .language-switch {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            background: #f8fafc;
+        }
+
+        .language-switch button {
+            min-width: 44px;
+            border: 0;
+            border-radius: 999px;
+            padding: 8px 12px;
+            background: transparent;
+            color: var(--muted);
+            font: inherit;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 1;
+            cursor: pointer;
+        }
+
+        .language-switch button[aria-pressed="true"] {
+            background: #0f766e;
+            color: #ffffff;
+        }
+
+        .language-switch button:focus-visible {
+            outline: 3px solid #99f6e4;
+            outline-offset: 2px;
+        }
+
+        [data-language-content][hidden] {
+            display: none;
+        }
+
         .brand-dot {
             width: 8px;
             height: 8px;
@@ -136,17 +190,88 @@
             border: 0;
             border-top: 1px solid var(--line);
         }
+
+        @media (max-width: 640px) {
+            main {
+                padding: 16px 12px 48px;
+            }
+
+            article {
+                padding: 20px;
+                border-radius: 12px;
+            }
+
+            .topbar {
+                align-items: flex-start;
+            }
+        }
     </style>
 </head>
 
 <body>
     <main>
         <article>
-            <div class="brand-strip"><span class="brand-dot"></span>MayudevID</div>
+            <div class="topbar">
+                <div class="brand-strip"><span class="brand-dot"></span>MayudevID</div>
+                <div class="language-switch" aria-label="Language switcher">
+                    <button type="button" data-language-button="en" aria-pressed="true">EN</button>
+                    <button type="button" data-language-button="id" aria-pressed="false">ID</button>
+                </div>
+            </div>
             {% capture portfolio_markdown %}{% include_relative portfolio.md %}{% endcapture %}
-            {{ portfolio_markdown | markdownify }}
+            {% capture portfolio_markdown_en %}{% include_relative portfolio-en.md %}{% endcapture %}
+            <section data-language-content="en">
+                {{ portfolio_markdown_en | markdownify }}
+            </section>
+            <section data-language-content="id" hidden>
+                {{ portfolio_markdown | markdownify }}
+            </section>
         </article>
     </main>
+    <script>
+        (() => {
+            const languageButtons = document.querySelectorAll("[data-language-button]");
+            const languageContents = document.querySelectorAll("[data-language-content]");
+            const availableLanguages = ["id", "en"];
+
+            function getSavedLanguage() {
+                try {
+                    return localStorage.getItem("portfolioLanguage");
+                } catch {
+                    return null;
+                }
+            }
+
+            function saveLanguage(language) {
+                try {
+                    localStorage.setItem("portfolioLanguage", language);
+                } catch {
+                    // Keep switch working even when storage is unavailable.
+                }
+            }
+
+            function setLanguage(language) {
+                const nextLanguage = availableLanguages.includes(language) ? language : "en";
+
+                document.documentElement.lang = nextLanguage;
+                saveLanguage(nextLanguage);
+
+                languageButtons.forEach((button) => {
+                    button.setAttribute("aria-pressed", String(button.dataset.languageButton === nextLanguage));
+                });
+
+                languageContents.forEach((content) => {
+                    content.hidden = content.dataset.languageContent !== nextLanguage;
+                });
+            }
+
+            languageButtons.forEach((button) => {
+                button.addEventListener("click", () => setLanguage(button.dataset.languageButton));
+            });
+
+            setLanguage(getSavedLanguage() || "en");
+        })();
+    </script>
 </body>
 
 </html>
