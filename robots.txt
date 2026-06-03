@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mayudevid.github.io/sitemap.xml
+Sitemap: https://mydv.my.id/sitemap.xml
