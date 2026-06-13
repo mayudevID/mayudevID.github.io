@@ -1,6 +1,6 @@
 # MayudevID - Maulana Yusuf
 
-Personal brand for my work and journey as a Mobile Developer (Flutter), focused on Android and iOS app development.
+Personal brand for my work and journey as a Mobile Developer, focused on Android and iOS app development using Flutter and native technology integrations.
 
 - Location: South Tangerang
 - Email: [ymaulana089@gmail.com](mailto:ymaulana089@gmail.com)
@@ -14,12 +14,12 @@ Personal brand for my work and journey as a Mobile Developer (Flutter), focused 
 
 ## About Me
 
-I currently work as a Mobile Developer with experience building and improving mobile applications using Flutter. I have a bachelor's degree in Information Systems and a strong interest in building digital products that are stable, scalable, and meaningful for users.
+Mobile Developer with a bachelor's degree in Information Systems and experience building, improving, and maintaining Android and iOS applications using Flutter and native technology integrations. Experienced in user interface implementation, API integration, state management, and application deployment.
 
 My main focus areas are:
 
 - End-to-end feature development in mobile applications
-- API integration and data management
+- API integration, data management, and state management
 - App quality, performance, and release stability
 
 ---
@@ -27,39 +27,41 @@ My main focus areas are:
 ## Experience
 
 ### Staff Mobile Programmer
-**PT Kreasindo Karya Abadi** | Apr 2024 - Present
+**PT Kreasindo Karya Abadi** | May 2024 - Apr 2026
 
-- Developed complex mobile applications using Flutter (Dart)
-- Built important features, including:
+- Developed Android and iOS mobile applications using Flutter and Dart
+- Built and implemented features across 3 complex mobile applications, including 1 production application:
 	- API integration
 	- Data management
 	- Liveness detection (face detection)
-	- Chat and calls (LiveKit, CallKit iOS)
+	- Chat and voice/video calls (LiveKit, CallKit iOS)
 	- Real-time notifications (FCM)
 	- AR filters (Augmented Reality)
 	- Payment system
 - Contributed to community app stability with an error rate around 1.03% and a 4.03/5 rating
 - Supported daily active user growth up to an average of 12 thousand users in April 2025
 
-### Flutter Mobile Developer Intern
+### Flutter Mobile Developer - Internship
 **PT Suitmedia Kreasi Indonesia** | Feb 2023 - Jun 2023
 
-- Learned clean and structured Flutter coding practices
-- Collaborated with team workflows using Git
-- Improved technical communication for sharing ideas, requirements, challenges, and work progress
+- Contributed to mobile application development using Flutter and Dart, focusing on user interface implementation and application functionality
+- Managed source code with Git and collaborated through version control workflows
+- Participated in feature implementation, bug fixing, and application testing
+- Communicated with the team to discuss project requirements, resolve technical issues, and report progress
 
 ---
 
 ## Education
 
 ### Universitas Pembangunan Nasional Veteran Jakarta
-Bachelor of Information Systems | Sep 2020 - Jul 2024
+Bachelor of Information Systems, GPA 3.95/4.00 | Sep 2020 - Jul 2024
 
 - Study focus:
-	- Logic and problem-solving algorithms
-	- Application development (mobile/web)
-	- Basic AI/ML and data analysis
-	- System analysis, ERD, UML, and system design documentation
+	- Logical, analytical, and algorithmic problem-solving
+	- Web and mobile information system development
+	- Machine learning fundamentals and data analysis
+	- System analysis and design using DFD, ERD, and UML
+	- System documentation and requirements specifications
 
 ---
 
@@ -71,7 +73,7 @@ Bachelor of Information Systems | Sep 2020 - Jul 2024
 - Android and iOS development tools
 - Version control: Git, GitHub, GitLab
 - IDE: VS Code, Xcode, Android Studio
-- Simple CI/CD (Codemagic)
+- CI/CD: Fastlane, Codemagic
 
 ### Soft Skills
 

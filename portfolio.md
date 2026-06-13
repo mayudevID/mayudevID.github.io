@@ -1,6 +1,6 @@
 # MayudevID - Maulana Yusuf
 
-Brand personal untuk karya dan perjalanan saya sebagai Mobile Developer (Flutter), berfokus pada pengembangan aplikasi Android dan iOS.
+Brand personal untuk karya dan perjalanan saya sebagai Mobile Developer, berfokus pada pengembangan aplikasi Android dan iOS menggunakan Flutter serta integrasi teknologi native.
 
 - Lokasi: Tangerang Selatan
 - Email: [ymaulana089@gmail.com](mailto:ymaulana089@gmail.com)
@@ -14,12 +14,12 @@ Brand personal untuk karya dan perjalanan saya sebagai Mobile Developer (Flutter
 
 ## Tentang Saya
 
-Saat ini aktif sebagai Mobile Developer dengan pengalaman membangun dan mengembangkan aplikasi mobile menggunakan Flutter. Saya memiliki latar belakang S1 Sistem Informasi dan ketertarikan kuat pada pengembangan produk digital yang stabil, skalabel, dan berdampak bagi pengguna.
+Mobile Developer dengan latar belakang S1 Sistem Informasi dan pengalaman membangun, mengembangkan, serta memelihara aplikasi Android dan iOS menggunakan Flutter maupun integrasi teknologi native. Berpengalaman mengerjakan implementasi antarmuka pengguna, integrasi API, manajemen state, hingga deployment aplikasi.
 
 Fokus utama saya adalah:
 
 - Pengembangan fitur end-to-end di aplikasi mobile
-- Integrasi API dan manajemen data
+- Integrasi API, manajemen data, dan state management
 - Kualitas aplikasi, performa, dan stabilitas rilis
 
 ---
@@ -27,39 +27,41 @@ Fokus utama saya adalah:
 ## Pengalaman
 
 ### Staff Mobile Programmer
-**PT Kreasindo Karya Abadi** | Apr 2024 - Sekarang
+**PT Kreasindo Karya Abadi** | Mei 2024 - Apr 2026
 
-- Mengembangkan aplikasi mobile kompleks menggunakan Flutter (Dart)
-- Membangun berbagai fitur penting, termasuk:
+- Mengembangkan aplikasi mobile Android dan iOS menggunakan Flutter dan Dart
+- Membangun dan mengimplementasikan berbagai fitur pada 3 aplikasi mobile berskala kompleks, termasuk 1 aplikasi production:
 	- Integrasi API
 	- Manajemen data
 	- Liveness Detection (face detection)
-	- Chat dan call (LiveKit, CallKit iOS)
+	- Chat dan panggilan suara/video (LiveKit, CallKit iOS)
 	- Notifikasi real-time (FCM)
 	- Filter AR (Augmented Reality)
 	- Sistem pembayaran
 - Berkontribusi pada stabilitas aplikasi komunitas dengan error rate sekitar 1.03% dan rating 4.03/5
 - Mendukung pertumbuhan pengguna aktif harian hingga rata-rata 12 ribu (April 2025)
 
-### Flutter Mobile Developer Intern
+### Flutter Mobile Developer - Internship
 **PT Suitmedia Kreasi Indonesia** | Feb 2023 - Jun 2023
 
-- Mempelajari praktik penulisan kode Flutter yang rapi dan terstruktur
-- Berkolaborasi menggunakan Git dalam workflow tim
-- Mengasah komunikasi teknis untuk menyampaikan ide, kebutuhan, tantangan, dan progres kerja
+- Berkontribusi dalam pengembangan aplikasi mobile menggunakan Flutter dan Dart, dengan fokus pada implementasi antarmuka pengguna dan fungsionalitas aplikasi
+- Mengelola source code menggunakan Git dan berkolaborasi melalui workflow version control
+- Berpartisipasi dalam implementasi fitur, perbaikan bug, dan pengujian aplikasi
+- Berkomunikasi dengan tim untuk membahas kebutuhan proyek, menyelesaikan masalah teknis, dan menyampaikan progres
 
 ---
 
 ## Pendidikan
 
 ### Universitas Pembangunan Nasional Veteran Jakarta
-S1 Sistem Informasi | Sep 2020 - Jul 2024
+S1 Sistem Informasi, IPK 3.95/4.00 | Sep 2020 - Jul 2024
 
 - Fokus studi:
-	- Logika dan algoritma pemecahan masalah
-	- Pengembangan aplikasi (mobile/web)
-	- Dasar AI/ML dan analisis data
-	- Analisis sistem, ERD, UML, dan dokumentasi desain sistem
+	- Logika, analisis, dan algoritma pemecahan masalah
+	- Pengembangan sistem informasi berbasis web dan mobile
+	- Dasar machine learning dan analisis data
+	- Analisis dan perancangan sistem menggunakan DFD, ERD, dan UML
+	- Dokumentasi sistem dan spesifikasi kebutuhan
 
 ---
 
@@ -71,7 +73,7 @@ S1 Sistem Informasi | Sep 2020 - Jul 2024
 - Android dan iOS development tools
 - Version control: Git, GitHub, GitLab
 - IDE: VS Code, Xcode, Android Studio
-- Simple CI/CD (Codemagic)
+- CI/CD: Fastlane, Codemagic
 
 ### Soft Skills
 
