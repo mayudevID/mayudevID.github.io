@@ -26,6 +26,14 @@ Fokus utama saya adalah:
 
 ## Pengalaman
 
+### Flutter Developer
+**PT Aneka Bintang Gading (Holywings Group)** | Mei 2026 - Sekarang
+
+- Mengembangkan sistem pembelajaran internal untuk lebih dari 4.000 karyawan menggunakan React, Laravel, dan Flutter, mencakup web administrasi, backend, dan aplikasi mobile dengan fitur onboarding, learning path, pelatihan technical dan soft skill, serta kuis evaluasi
+- Mengembangkan dan memelihara aplikasi mobile internal perusahaan menggunakan Flutter, termasuk pembaruan UI, fitur media sosial, artikel, group chat, dan peningkatan sistem absensi
+- Mengembangkan platform manajemen agency dan talent end-to-end menggunakan Flutter dan Laravel, mencakup administrasi, absensi berbasis geolocation dan face verification, penempatan, kontrak, payroll, serta role-based access control
+- Menangani database, scheduled jobs, deployment, production troubleshooting, dan rilis aplikasi ke Google Play dan Apple App Store
+
 ### Staff Mobile Programmer
 **PT Kreasindo Karya Abadi** | Mei 2024 - Apr 2026
 

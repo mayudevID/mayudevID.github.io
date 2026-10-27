@@ -26,6 +26,14 @@ My main focus areas are:
 
 ## Experience
 
+### Flutter Developer
+**PT Aneka Bintang Gading (Holywings Group)** | May 2026 - Present
+
+- Developing an internal learning system for more than 4,000 employees using React, Laravel, and Flutter, covering web administration, backend, and a mobile app with onboarding, learning paths, technical and soft skills training, and assessment quizzes
+- Developing and maintaining the company's internal mobile app with Flutter, including UI updates and social media, articles, group chat, and attendance system improvements
+- Building an end-to-end agency and talent management platform with Flutter and Laravel, covering administration, geolocation and face verification attendance, placement, contracts, payroll, and role-based access control
+- Handling the database, scheduled jobs, deployment, production troubleshooting, and app releases to Google Play and the Apple App Store
+
 ### Staff Mobile Programmer
 **PT Kreasindo Karya Abadi** | May 2024 - Apr 2026
 
@@ -74,6 +82,8 @@ Bachelor of Information Systems, GPA 3.95/4.00 | Sep 2020 - Jul 2024
 - Version control: Git, GitHub, GitLab
 - IDE: VS Code, Xcode, Android Studio
 - CI/CD: Fastlane, Codemagic
+- Laravel (PHP) (AI-assisted code)
+- React.js (JavaScript) (AI-assisted code)
 
 ### Soft Skills
 
