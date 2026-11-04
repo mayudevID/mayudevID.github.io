@@ -4,9 +4,8 @@ Brand personal untuk karya dan perjalanan saya sebagai Mobile Developer, berfoku
 
 - Lokasi: Tangerang Selatan
 - Email: [ymaulana089@gmail.com](mailto:ymaulana089@gmail.com)
-- Phone: [+62 858-1159-1353](tel:+6285811591353)
-- LinkedIn: [linkedin.com/in/maulana-yusuf-b87393201](https://www.linkedin.com/in/maulana-yusuf-b87393201)
-- GitHub: [github.com/mayudevID](https://github.com/mayudevID)
+- LinkedIn: [Maulana Yusuf](https://www.linkedin.com/in/maulana-yusuf-b87393201)
+- GitHub: [mayudevID](https://github.com/mayudevID)
 
 [![Unduh CV](https://img.shields.io/badge/Unduh%20CV-PDF-0f766e?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](./cv_maulana_yusuf.pdf)
 
@@ -101,7 +100,64 @@ S1 Sistem Informasi, IPK 3.95/4.00 | Sep 2020 - Jul 2024
 
 ## Proyek Unggulan
 
-### 1. Ar-Rauda - Kajian Islam dan Murottal Al-Qur'an
+### 1. Holy Smart
+
+Holy Smart adalah platform pembelajaran karyawan HW Group yang dirancang untuk mendukung proses onboarding, peningkatan kompetensi, pengembangan individu, dan sertifikasi secara terstruktur.
+
+**Fitur Utama**
+
+- Learning Journey untuk onboarding dan pengembangan kompetensi
+- Course dan materi belajar berupa video, PDF, dan modul
+- Test dan kuis dengan penilaian
+- Pantau progres, riwayat, dan tenggat pembelajaran
+- Sertifikat setelah menyelesaikan Learning Journey tertentu
+
+<div style="overflow-x:auto;display:flex;gap:12px;padding:12px 0;-webkit-overflow-scrolling:touch;align-items:center;">
+	<img src="./assets/holy_smart/1.png" alt="Holy Smart screenshot 1" style="flex:0 0 auto;height:320px;width:200px;max-width:90%;object-fit:cover;border-radius:12px;" />
+	<img src="./assets/holy_smart/2.png" alt="Holy Smart screenshot 2" style="flex:0 0 auto;height:320px;width:200px;max-width:90%;object-fit:cover;border-radius:12px;" />
+	<img src="./assets/holy_smart/3.png" alt="Holy Smart screenshot 3" style="flex:0 0 auto;height:320px;width:200px;max-width:90%;object-fit:cover;border-radius:12px;" />
+	<img src="./assets/holy_smart/4.png" alt="Holy Smart screenshot 4" style="flex:0 0 auto;height:320px;width:200px;max-width:90%;object-fit:cover;border-radius:12px;" />
+</div>
+
+<div style="display:flex; gap:2px; align-items:center; flex-wrap:wrap;">
+  <a href="https://play.google.com/store/apps/details?id=com.hwgroup.holysmart">
+    <img src="./assets/play_store/google_play_badge.png" alt="Get it on Google Play" style="width:200px;height:60px;object-fit:contain;" />
+  </a>
+  <a href="https://apps.apple.com/us/app/holy-smart/id6789028854">
+    <img src="./assets/app_store/app_store.svg" alt="Download on the App Store" style="width:200px;height:60px;object-fit:contain;" />
+  </a>
+</div>
+
+### 2. Holy World
+
+Aplikasi absensi untuk karyawan HW Group.
+
+**Fitur Utama**
+
+- Absensi masuk dan pulang
+- Riwayat absensi dengan foto
+- Pengingat absensi dan alarm
+- Jadwal kerja, pergantian shift, dan pengajuan perubahan absensi
+- Pengelolaan aset
+
+<div style="overflow-x:auto;display:flex;gap:12px;padding:12px 0;-webkit-overflow-scrolling:touch;align-items:center;">
+	<img src="./assets/holy_world/1.webp" alt="Holy World screenshot 1" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img src="./assets/holy_world/2.webp" alt="Holy World screenshot 2" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img src="./assets/holy_world/3.webp" alt="Holy World screenshot 3" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img src="./assets/holy_world/4.webp" alt="Holy World screenshot 4" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img src="./assets/holy_world/5.webp" alt="Holy World screenshot 5" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+</div>
+
+<div style="display:flex; gap:2px; align-items:center; flex-wrap:wrap;">
+  <a href="https://play.google.com/store/apps/details?id=com.holywingsindonesia.holywingsattendance">
+    <img src="./assets/play_store/google_play_badge.png" alt="Get it on Google Play" style="width:200px;height:60px;object-fit:contain;" />
+  </a>
+  <a href="https://apps.apple.com/id/app/holyworld-mobile/id1553614359">
+    <img src="./assets/app_store/app_store.svg" alt="Download on the App Store" style="width:200px;height:60px;object-fit:contain;" />
+  </a>
+</div>
+
+### 3. Ar-Rauda - Kajian Islam dan Murottal Al-Qur'an
 
 Ar-Rauda adalah aplikasi kajian Islam yang menghadirkan koleksi murottal Al-Qur'an, kajian, dan materi keagamaan lainnya.
 
@@ -117,11 +173,11 @@ Ar-Rauda adalah aplikasi kajian Islam yang menghadirkan koleksi murottal Al-Qur'
 - Roadmap belajar Islam (materi terstruktur)
 
 <div style="overflow-x:auto;display:flex;gap:12px;padding:12px 0;-webkit-overflow-scrolling:touch;align-items:center;">
-	<img src="./assets/1.png" alt="Frame 2" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
-	<img src="./assets/2.png" alt="Frame 3" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
-	<img src="./assets/3.png" alt="Frame 4" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
-	<img src="./assets/4.png" alt="Frame 5" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
-	<img src="./assets/5.png" alt="Frame 6" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img src="./assets/ar_rauda/1.png" alt="Frame 2" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img src="./assets/ar_rauda/2.png" alt="Frame 3" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img src="./assets/ar_rauda/3.png" alt="Frame 4" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img src="./assets/ar_rauda/4.png" alt="Frame 5" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img src="./assets/ar_rauda/5.png" alt="Frame 6" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
 </div>
 
 Tersedia di Google Play dan App Store
@@ -144,7 +200,7 @@ Tersedia di Google Play dan App Store
   </a>
 </div>
 
-### 2. Bloom - Productivity App
+### 4. Bloom - Productivity App
 <img src="https://raw.githubusercontent.com/mayudevID/bloom/main/assets/images/cover.png" alt="Bloom Cover" style="display:block;width:100%;max-width:620px;height:auto;margin:12px auto 18px;border-radius:12px;" />
 
 Bloom adalah aplikasi produktivitas harian dengan fitur To-do List, Pomodoro Timer, Habit Tracker, dan reminder berbasis notifikasi.
@@ -163,7 +219,7 @@ Bloom adalah aplikasi produktivitas harian dengan fitur To-do List, Pomodoro Tim
 
 Repository: [github.com/mayudevID/bloom](https://github.com/mayudevID/bloom)
 
-### 3. Cling! - Money Management App
+### 5. Cling! - Money Management App
 <img src="https://raw.githubusercontent.com/mayudevID/cling/main/assets/cover.jpg" alt="Cling Cover" style="display:block;width:100%;max-width:620px;height:auto;margin:12px auto 18px;border-radius:12px;" />
 
 Cling! adalah aplikasi money management untuk tracking pemasukan-pengeluaran, budgeting, dan monitoring kondisi finansial.
@@ -183,7 +239,7 @@ Cling! adalah aplikasi money management untuk tracking pemasukan-pengeluaran, bu
 
 Repository: [github.com/mayudevID/cling](https://github.com/mayudevID/cling)
 
-### 4. KBBI Daring App
+### 6. KBBI Daring App
 <img src="https://raw.githubusercontent.com/mayudevID/kbbi_daring_app/master/cover.png" alt="KBBI Daring Cover" style="display:block;width:100%;max-width:620px;height:auto;margin:12px auto 18px;border-radius:12px;" />
 
 Aplikasi Android untuk pencarian kosakata KBBI berbasis API daring.
