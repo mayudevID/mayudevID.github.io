@@ -81,8 +81,8 @@ S1 Sistem Informasi, IPK 3.95/4.00 | Sep 2020 - Jul 2024
 - Version control: Git, GitHub, GitLab
 - IDE: VS Code, Xcode, Android Studio
 - CI/CD: Fastlane, Codemagic
-- Laravel (PHP) (pengembangan dibantu AI)
-- React.js (JavaScript) (pengembangan dibantu AI)
+- Laravel (PHP)
+- React.js (JavaScript)
 
 ### Soft Skills
 

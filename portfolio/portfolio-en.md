@@ -81,8 +81,8 @@ Bachelor of Information Systems, GPA 3.95/4.00 | Sep 2020 - Jul 2024
 - Version control: Git, GitHub, GitLab
 - IDE: VS Code, Xcode, Android Studio
 - CI/CD: Fastlane, Codemagic
-- Laravel (PHP) (AI-assisted code)
-- React.js (JavaScript) (AI-assisted code)
+- Laravel (PHP)
+- React.js (JavaScript)
 
 ### Soft Skills
 
