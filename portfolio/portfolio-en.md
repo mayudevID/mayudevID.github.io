@@ -108,7 +108,7 @@ Holy Smart is HW Group's employee learning platform for structured onboarding, c
 
 **Technology**: Flutter (mobile) · React (admin web) · Laravel (mobile and web API)
 
-<img src="./assets/holy_smart/5.png" alt="HolySmart admin web login screen" style="display:block;width:100%;max-width:900px;height:auto;margin:12px 0;border-radius:12px;" />
+<img loading="lazy" decoding="async" src="./assets/holy_smart/5.png" alt="HolySmart admin web login screen" style="display:block;width:100%;max-width:900px;height:auto;margin:12px 0;border-radius:12px;" />
 
 **Main Features**
 
@@ -118,19 +118,19 @@ Holy Smart is HW Group's employee learning platform for structured onboarding, c
 - Track learning progress, history, and deadlines
 - Certificates after completing selected learning journeys
 
-<div style="overflow-x:auto;display:flex;gap:12px;padding:12px 0;-webkit-overflow-scrolling:touch;align-items:center;">
-	<img src="./assets/holy_smart/1.png" alt="Holy Smart screenshot 1" style="flex:0 0 auto;height:320px;width:200px;max-width:90%;object-fit:cover;border-radius:12px;" />
-	<img src="./assets/holy_smart/2.png" alt="Holy Smart screenshot 2" style="flex:0 0 auto;height:320px;width:200px;max-width:90%;object-fit:cover;border-radius:12px;" />
-	<img src="./assets/holy_smart/3.png" alt="Holy Smart screenshot 3" style="flex:0 0 auto;height:320px;width:200px;max-width:90%;object-fit:cover;border-radius:12px;" />
-	<img src="./assets/holy_smart/4.png" alt="Holy Smart screenshot 4" style="flex:0 0 auto;height:320px;width:200px;max-width:90%;object-fit:cover;border-radius:12px;" />
+<div class="screenshot-gallery" role="region" aria-label="Holy Smart mobile app screenshots" tabindex="0" style="overflow-x:auto;display:flex;gap:12px;padding:12px 0;-webkit-overflow-scrolling:touch;align-items:center;">
+	<img loading="lazy" decoding="async" src="./assets/holy_smart/1.png" alt="Holy Smart screenshot 1" style="flex:0 0 auto;height:320px;width:200px;max-width:90%;object-fit:cover;border-radius:12px;" />
+	<img loading="lazy" decoding="async" src="./assets/holy_smart/2.png" alt="Holy Smart screenshot 2" style="flex:0 0 auto;height:320px;width:200px;max-width:90%;object-fit:cover;border-radius:12px;" />
+	<img loading="lazy" decoding="async" src="./assets/holy_smart/3.png" alt="Holy Smart screenshot 3" style="flex:0 0 auto;height:320px;width:200px;max-width:90%;object-fit:cover;border-radius:12px;" />
+	<img loading="lazy" decoding="async" src="./assets/holy_smart/4.png" alt="Holy Smart screenshot 4" style="flex:0 0 auto;height:320px;width:200px;max-width:90%;object-fit:cover;border-radius:12px;" />
 </div>
 
 <div style="display:flex; gap:2px; align-items:center; flex-wrap:wrap;">
   <a href="https://play.google.com/store/apps/details?id=com.hwgroup.holysmart">
-    <img src="./assets/play_store/google_play_badge.png" alt="Get it on Google Play" style="width:200px;height:60px;object-fit:contain;" />
+    <img loading="lazy" decoding="async" src="./assets/play_store/google_play_badge.png" alt="Get it on Google Play" style="width:200px;height:60px;object-fit:contain;" />
   </a>
-  <a href="https://apps.apple.com/us/app/holy-smart/id6789028854">
-    <img src="./assets/app_store/app_store.svg" alt="Download on the App Store" style="width:200px;height:60px;object-fit:contain;" />
+  <a href="https://apps.apple.com/app/id6805425415">
+    <img loading="lazy" decoding="async" src="./assets/app_store/app_store.svg" alt="Download on the App Store" style="width:200px;height:60px;object-fit:contain;" />
   </a>
 </div>
 
@@ -146,20 +146,20 @@ An attendance app for HW Group employees.
 - Work schedules, shift changes, and attendance change requests
 - Asset management
 
-<div style="overflow-x:auto;display:flex;gap:12px;padding:12px 0;-webkit-overflow-scrolling:touch;align-items:center;">
-	<img src="./assets/holy_world/1.webp" alt="Holy World screenshot 1" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
-	<img src="./assets/holy_world/2.webp" alt="Holy World screenshot 2" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
-	<img src="./assets/holy_world/3.webp" alt="Holy World screenshot 3" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
-	<img src="./assets/holy_world/4.webp" alt="Holy World screenshot 4" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
-	<img src="./assets/holy_world/5.webp" alt="Holy World screenshot 5" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+<div class="screenshot-gallery" role="region" aria-label="Holy World mobile app screenshots" tabindex="0" style="overflow-x:auto;display:flex;gap:12px;padding:12px 0;-webkit-overflow-scrolling:touch;align-items:center;">
+	<img loading="lazy" decoding="async" src="./assets/holy_world/1.webp" alt="Holy World screenshot 1" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img loading="lazy" decoding="async" src="./assets/holy_world/2.webp" alt="Holy World screenshot 2" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img loading="lazy" decoding="async" src="./assets/holy_world/3.webp" alt="Holy World screenshot 3" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img loading="lazy" decoding="async" src="./assets/holy_world/4.webp" alt="Holy World screenshot 4" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img loading="lazy" decoding="async" src="./assets/holy_world/5.webp" alt="Holy World screenshot 5" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
 </div>
 
 <div style="display:flex; gap:2px; align-items:center; flex-wrap:wrap;">
   <a href="https://play.google.com/store/apps/details?id=com.holywingsindonesia.holywingsattendance">
-    <img src="./assets/play_store/google_play_badge.png" alt="Get it on Google Play" style="width:200px;height:60px;object-fit:contain;" />
+    <img loading="lazy" decoding="async" src="./assets/play_store/google_play_badge.png" alt="Get it on Google Play" style="width:200px;height:60px;object-fit:contain;" />
   </a>
   <a href="https://apps.apple.com/id/app/holyworld-mobile/id1553614359">
-    <img src="./assets/app_store/app_store.svg" alt="Download on the App Store" style="width:200px;height:60px;object-fit:contain;" />
+    <img loading="lazy" decoding="async" src="./assets/app_store/app_store.svg" alt="Download on the App Store" style="width:200px;height:60px;object-fit:contain;" />
   </a>
 </div>
 
@@ -178,19 +178,19 @@ Ar-Rauda is an Islamic studies app that provides Qur'an murottal collections, le
 - Morning and evening dhikr
 - Islamic learning roadmap (structured materials)
 
-<div style="overflow-x:auto;display:flex;gap:12px;padding:12px 0;-webkit-overflow-scrolling:touch;align-items:center;">
-	<img src="./assets/ar_rauda/1.png" alt="Frame 2" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
-	<img src="./assets/ar_rauda/2.png" alt="Frame 3" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
-	<img src="./assets/ar_rauda/3.png" alt="Frame 4" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
-	<img src="./assets/ar_rauda/4.png" alt="Frame 5" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
-	<img src="./assets/ar_rauda/5.png" alt="Frame 6" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+<div class="screenshot-gallery" role="region" aria-label="Ar-Rauda mobile app screenshots" tabindex="0" style="overflow-x:auto;display:flex;gap:12px;padding:12px 0;-webkit-overflow-scrolling:touch;align-items:center;">
+	<img loading="lazy" decoding="async" src="./assets/ar_rauda/1.png" alt="Ar-Rauda mobile app screenshot 1" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img loading="lazy" decoding="async" src="./assets/ar_rauda/2.png" alt="Ar-Rauda mobile app screenshot 2" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img loading="lazy" decoding="async" src="./assets/ar_rauda/3.png" alt="Ar-Rauda mobile app screenshot 3" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img loading="lazy" decoding="async" src="./assets/ar_rauda/4.png" alt="Ar-Rauda mobile app screenshot 4" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img loading="lazy" decoding="async" src="./assets/ar_rauda/5.png" alt="Ar-Rauda mobile app screenshot 5" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
 </div>
 
 Available on Google Play and App Store
 
 <div style="display:flex; gap:2px; align-items:center; flex-wrap:wrap;">
   <a href="https://play.google.com/store/apps/details?id=com.work.arraudhah&hl=en">
-    <img
+    <img loading="lazy" decoding="async"
       src="./assets/play_store/google_play_badge.png"
       alt="Get it on Google Play"
       style="width:200px;height:60px;object-fit:contain;"
@@ -198,7 +198,7 @@ Available on Google Play and App Store
   </a>
 
   <a href="https://apps.apple.com/id/app/ar-rauda/id6762336087">
-    <img
+    <img loading="lazy" decoding="async"
       src="./assets/app_store/app_store.svg"
       alt="Download on the App Store"
       style="width:200px;height:60px;object-fit:contain;"
@@ -207,7 +207,7 @@ Available on Google Play and App Store
 </div>
 
 ### 4. Bloom - Productivity App
-<img src="https://raw.githubusercontent.com/mayudevID/bloom/main/assets/images/cover.png" alt="Bloom Cover" style="display:block;width:100%;max-width:620px;height:auto;margin:12px auto 18px;border-radius:12px;" />
+<img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/mayudevID/bloom/main/assets/images/cover.png" alt="Bloom Cover" style="display:block;width:100%;max-width:620px;height:auto;margin:12px auto 18px;border-radius:12px;" />
 
 Bloom is a daily productivity app with To-do List, Pomodoro Timer, Habit Tracker, and notification-based reminder features.
 
@@ -226,7 +226,7 @@ Bloom is a daily productivity app with To-do List, Pomodoro Timer, Habit Tracker
 Repository: [github.com/mayudevID/bloom](https://github.com/mayudevID/bloom)
 
 ### 5. Cling! - Money Management App
-<img src="https://raw.githubusercontent.com/mayudevID/cling/main/assets/cover.jpg" alt="Cling Cover" style="display:block;width:100%;max-width:620px;height:auto;margin:12px auto 18px;border-radius:12px;" />
+<img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/mayudevID/cling/main/assets/cover.jpg" alt="Cling Cover" style="display:block;width:100%;max-width:620px;height:auto;margin:12px auto 18px;border-radius:12px;" />
 
 Cling! is a money management app for tracking income and expenses, budgeting, and monitoring financial condition.
 
@@ -246,7 +246,7 @@ Cling! is a money management app for tracking income and expenses, budgeting, an
 Repository: [github.com/mayudevID/cling](https://github.com/mayudevID/cling)
 
 ### 6. KBBI Daring App
-<img src="https://raw.githubusercontent.com/mayudevID/kbbi_daring_app/master/cover.png" alt="KBBI Daring Cover" style="display:block;width:100%;max-width:620px;height:auto;margin:12px auto 18px;border-radius:12px;" />
+<img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/mayudevID/kbbi_daring_app/master/cover.png" alt="KBBI Daring Cover" style="display:block;width:100%;max-width:620px;height:auto;margin:12px auto 18px;border-radius:12px;" />
 
 Android app for online KBBI vocabulary search powered by an API.
 

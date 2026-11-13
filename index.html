@@ -6,21 +6,18 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MayudevID | Maulana Yusuf's Portfolio</title>
-    <meta name="description" content="MayudevID | Maulana Yusuf's Portfolio" />
+    <title>Maulana Yusuf | Flutter &amp; Mobile Developer | MayudevID</title>
+    <meta name="description" content="Explore Maulana Yusuf's Flutter and mobile development portfolio, featuring Android and iOS apps, native integrations, and production releases." />
     <meta name="author" content="Maulana Yusuf" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://mydv.my.id/" />
-    <link rel="alternate" hreflang="id" href="https://mydv.my.id/" />
-    <link rel="alternate" hreflang="en" href="https://mydv.my.id/" />
-    <link rel="alternate" hreflang="x-default" href="https://mydv.my.id/" />
 
     <meta name="google-site-verification" content="vvVXmwxXpFyMHO-Yhf4qhy7qRgbTwD_pnTpD8XuyDLY" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="MayudevID" />
-    <meta property="og:title" content="MayudevID | Maulana Yusuf's Portfolio" />
-    <meta property="og:description" content="Projects, experience, and mobile application development work." />
+    <meta property="og:title" content="Maulana Yusuf | Flutter &amp; Mobile Developer" />
+    <meta property="og:description" content="Explore Flutter, Android, and iOS projects built by Maulana Yusuf, including production apps and native integrations." />
     <meta property="og:url" content="https://mydv.my.id/" />
     <meta property="og:image"
         content="https://raw.githubusercontent.com/mayudevID/bloom/main/assets/images/cover.png" />
@@ -28,8 +25,8 @@
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@mayudevID" />
-    <meta name="twitter:title" content="MayudevID | Maulana Yusuf's Portfolio" />
-    <meta name="twitter:description" content="Projects, experience, and mobile application development work." />
+    <meta name="twitter:title" content="Maulana Yusuf | Flutter &amp; Mobile Developer" />
+    <meta name="twitter:description" content="Explore Flutter, Android, and iOS projects built by Maulana Yusuf, including production apps and native integrations." />
     <meta name="twitter:image"
         content="https://raw.githubusercontent.com/mayudevID/bloom/main/assets/images/cover.png" />
     <meta name="twitter:image:alt" content="Projects, experience, and mobile application development work." />
@@ -154,6 +151,12 @@
             outline-offset: 2px;
         }
 
+        .screenshot-gallery:focus-visible {
+            outline: 3px solid #0f766e;
+            outline-offset: 3px;
+            border-radius: 8px;
+        }
+
         [data-language-content][hidden] {
             display: none;
         }
@@ -213,9 +216,9 @@
         <article>
             <div class="topbar">
                 <div class="brand-strip"><span class="brand-dot"></span>MayudevID</div>
-                <div class="language-switch" aria-label="Language switcher">
-                    <button type="button" data-language-button="en" aria-pressed="true">EN</button>
-                    <button type="button" data-language-button="id" aria-pressed="false">ID</button>
+                <div class="language-switch" role="group" aria-label="Language switcher">
+                    <button type="button" data-language-button="en" aria-label="Switch to English" aria-pressed="true">EN</button>
+                    <button type="button" data-language-button="id" aria-label="Ganti ke Bahasa Indonesia" aria-pressed="false">ID</button>
                 </div>
             </div>
             {% capture portfolio_markdown %}{% include_relative portfolio/portfolio.md %}{% endcapture %}
