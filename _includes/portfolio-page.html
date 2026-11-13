@@ -17,7 +17,7 @@
 {% assign header_projects = '## Featured Projects' %}
 {% assign header_contact = '## Contact' %}
 {% endif %}
-<div class="localized-page" data-language-content="{{ lang }}" {% if lang=='id' %} hidden{% endif %}>
+<div class="localized-page" data-language-content="{{ lang }}">
     <section class="hero-section container" id="top-{{ lang }}" aria-labelledby="hero-title-{{ lang }}">
         <div class="hero-content">
             <div class="eyebrow"><span class="live-dot" aria-hidden="true"></span>Mobile Developer</div>
@@ -35,7 +35,7 @@
             <div class="hero-actions">
                 <a class="button button-primary" href="#projects-{{ lang }}">{% if lang == 'id' %}Lihat Proyek{% else
                     %}Explore Projects{% endif %}<span aria-hidden="true">↗</span></a>
-                <a class="button button-secondary" href="./portfolio/cv_maulana_yusuf.pdf" download>{% if lang == 'id'
+                <a class="button button-secondary" href="/portfolio/cv_maulana_yusuf.pdf" download>{% if lang == 'id'
                     %}Unduh CV{% else %}Download CV{% endif %}<span aria-hidden="true">↓</span></a>
             </div>
             <p class="hero-location"><span aria-hidden="true">◎</span> {% if lang == 'id' %}Tangerang Selatan,
@@ -97,7 +97,7 @@
                     <a class="featured-card-media media-holy-smart" href="#case-study-holy-smart-{{ lang }}"
                         data-open-case-study
                         aria-label="{% if lang == 'id' %}Lihat detail Holy Smart{% else %}Explore Holy Smart case study{% endif %}"><img
-                            src="./assets/holy_smart/1.png" loading="lazy" decoding="async"
+                            src="/assets/holy_smart/1.png" loading="lazy" decoding="async"
                             alt="{% if lang == 'id' %}Tampilan aplikasi pembelajaran Holy Smart{% else %}Holy Smart learning app screenshot{% endif %}"></a>
                     <div class="featured-card-body">
                         <p class="card-eyebrow">Flutter · React · Laravel</p>
@@ -113,7 +113,7 @@
                     <a class="featured-card-media media-holy-world" href="#case-study-holy-world-{{ lang }}"
                         data-open-case-study
                         aria-label="{% if lang == 'id' %}Lihat detail Holy World{% else %}Explore Holy World case study{% endif %}"><img
-                            src="./assets/holy_world/1.webp" loading="lazy" decoding="async"
+                            src="/assets/holy_world/1.webp" loading="lazy" decoding="async"
                             alt="{% if lang == 'id' %}Tampilan aplikasi absensi Holy World{% else %}Holy World attendance app screenshot{% endif %}"></a>
                     <div class="featured-card-body">
                         <p class="card-eyebrow">Flutter · Android · iOS</p>
@@ -129,7 +129,7 @@
                     <a class="featured-card-media media-ar-rauda" href="#case-study-ar-rauda-{{ lang }}"
                         data-open-case-study
                         aria-label="{% if lang == 'id' %}Lihat detail Ar-Rauda{% else %}Explore Ar-Rauda case study{% endif %}"><img
-                            src="./assets/ar_rauda/1.png" loading="lazy" decoding="async"
+                            src="/assets/ar_rauda/1.png" loading="lazy" decoding="async"
                             alt="{% if lang == 'id' %}Tampilan aplikasi kajian Ar-Rauda{% else %}Ar-Rauda learning app screenshot{% endif %}"></a>
                     <div class="featured-card-body">
                         <p class="card-eyebrow">Flutter · Audio · Live</p>
