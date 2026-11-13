@@ -129,7 +129,7 @@ Holy Smart is HW Group's employee learning platform for structured onboarding, c
   <a href="https://play.google.com/store/apps/details?id=com.hwgroup.holysmart">
     <img loading="lazy" decoding="async" src="./assets/play_store/google_play_badge.png" alt="Get it on Google Play" style="width:200px;height:60px;object-fit:contain;" />
   </a>
-  <a href="https://apps.apple.com/app/id6805425415">
+  <a href="https://apps.apple.com/us/app/holy-smart/id6789028854">
     <img loading="lazy" decoding="async" src="./assets/app_store/app_store.svg" alt="Download on the App Store" style="width:200px;height:60px;object-fit:contain;" />
   </a>
 </div>
