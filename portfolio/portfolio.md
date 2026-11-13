@@ -11,6 +11,7 @@ Brand personal untuk karya dan perjalanan saya sebagai Mobile Developer, berfoku
 
 ---
 
+<!-- PORTFOLIO:SECTION -->
 ## Tentang Saya
 
 Mobile Developer dengan latar belakang S1 Sistem Informasi dan pengalaman membangun, mengembangkan, serta memelihara aplikasi Android dan iOS menggunakan Flutter maupun integrasi teknologi native. Berpengalaman mengerjakan implementasi antarmuka pengguna, integrasi API, manajemen state, hingga deployment aplikasi.
@@ -23,6 +24,7 @@ Fokus utama saya adalah:
 
 ---
 
+<!-- PORTFOLIO:SECTION -->
 ## Pengalaman
 
 ### Flutter Developer
@@ -58,6 +60,7 @@ Fokus utama saya adalah:
 
 ---
 
+<!-- PORTFOLIO:SECTION -->
 ## Pendidikan
 
 ### Universitas Pembangunan Nasional Veteran Jakarta
@@ -72,6 +75,7 @@ S1 Sistem Informasi, IPK 3.95/4.00 | Sep 2020 - Jul 2024
 
 ---
 
+<!-- PORTFOLIO:SECTION -->
 ## Keterampilan
 
 ### Hard Skills
@@ -93,6 +97,7 @@ S1 Sistem Informasi, IPK 3.95/4.00 | Sep 2020 - Jul 2024
 
 ---
 
+<!-- PORTFOLIO:SECTION -->
 ## Sertifikasi dan Pelatihan
 
 - Menjadi Android Developer Expert - Dicoding (2022)
@@ -100,6 +105,7 @@ S1 Sistem Informasi, IPK 3.95/4.00 | Sep 2020 - Jul 2024
 
 ---
 
+<!-- PORTFOLIO:SECTION -->
 ## Proyek Unggulan
 
 ### 1. Holy Smart
@@ -134,6 +140,7 @@ Holy Smart adalah platform pembelajaran karyawan HW Group untuk mendukung onboar
   </a>
 </div>
 
+<!-- PORTFOLIO:SECTION -->
 ### 2. Holy World
 
 Aplikasi absensi untuk karyawan HW Group.
@@ -163,6 +170,7 @@ Aplikasi absensi untuk karyawan HW Group.
   </a>
 </div>
 
+<!-- PORTFOLIO:SECTION -->
 ### 3. Ar-Rauda - Kajian Islam dan Murottal Al-Qur'an
 
 Ar-Rauda adalah aplikasi kajian Islam yang menghadirkan koleksi murottal Al-Qur'an, kajian, dan materi keagamaan lainnya.
@@ -206,6 +214,7 @@ Tersedia di Google Play dan App Store
   </a>
 </div>
 
+<!-- PORTFOLIO:SECTION -->
 ### 4. Bloom - Productivity App
 <img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/mayudevID/bloom/main/assets/images/cover.png" alt="Bloom Cover" style="display:block;width:100%;max-width:620px;height:auto;margin:12px auto 18px;border-radius:12px;" />
 
@@ -225,6 +234,7 @@ Bloom adalah aplikasi produktivitas harian dengan fitur To-do List, Pomodoro Tim
 
 Repository: [github.com/mayudevID/bloom](https://github.com/mayudevID/bloom)
 
+<!-- PORTFOLIO:SECTION -->
 ### 5. Cling! - Money Management App
 <img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/mayudevID/cling/main/assets/cover.jpg" alt="Cling Cover" style="display:block;width:100%;max-width:620px;height:auto;margin:12px auto 18px;border-radius:12px;" />
 
@@ -245,6 +255,7 @@ Cling! adalah aplikasi money management untuk tracking pemasukan-pengeluaran, bu
 
 Repository: [github.com/mayudevID/cling](https://github.com/mayudevID/cling)
 
+<!-- PORTFOLIO:SECTION -->
 ### 6. KBBI Daring App
 <img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/mayudevID/kbbi_daring_app/master/cover.png" alt="KBBI Daring Cover" style="display:block;width:100%;max-width:620px;height:auto;margin:12px auto 18px;border-radius:12px;" />
 
@@ -265,6 +276,7 @@ Repository: [github.com/mayudevID/kbbi_daring_app](https://github.com/mayudevID/
 
 ---
 
+<!-- PORTFOLIO:SECTION -->
 ## Kontak
 
 Terbuka untuk kolaborasi dan peluang kerja full-time di bidang Mobile Development.

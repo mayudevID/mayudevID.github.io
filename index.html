@@ -53,228 +53,48 @@
         }
     </script>
 
-    <style>
-        :root {
-            --fg: #0f172a;
-            --muted: #334155;
-            --bg: #f8fafc;
-            --card: #ffffff;
-            --line: #e2e8f0;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            color: var(--fg);
-            background: linear-gradient(180deg, #f8fafc 0%, #eef2ff 100%);
-            line-height: 1.65;
-        }
-
-        main {
-            max-width: 920px;
-            margin: 0 auto;
-            padding: 28px 20px 64px;
-        }
-
-        article {
-            background: var(--card);
-            border: 1px solid var(--line);
-            border-radius: 16px;
-            padding: 28px;
-            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
-        }
-
-        .brand-strip {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 18px;
-            padding: 8px 14px;
-            border-radius: 999px;
-            border: 1px solid #99f6e4;
-            background: #ecfeff;
-            color: #0f766e;
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-        }
-
-        .topbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 16px;
-            margin-bottom: 18px;
-            flex-wrap: wrap;
-        }
-
-        .topbar .brand-strip {
-            margin-bottom: 0;
-        }
-
-        .language-switch {
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-            padding: 4px;
-            border: 1px solid var(--line);
-            border-radius: 999px;
-            background: #f8fafc;
-        }
-
-        .language-switch button {
-            min-width: 44px;
-            border: 0;
-            border-radius: 999px;
-            padding: 8px 12px;
-            background: transparent;
-            color: var(--muted);
-            font: inherit;
-            font-size: 14px;
-            font-weight: 700;
-            line-height: 1;
-            cursor: pointer;
-        }
-
-        .language-switch button[aria-pressed="true"] {
-            background: #0f766e;
-            color: #ffffff;
-        }
-
-        .language-switch button:focus-visible {
-            outline: 3px solid #99f6e4;
-            outline-offset: 2px;
-        }
-
-        .screenshot-gallery:focus-visible {
-            outline: 3px solid #0f766e;
-            outline-offset: 3px;
-            border-radius: 8px;
-        }
-
-        [data-language-content][hidden] {
-            display: none;
-        }
-
-        .brand-dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 999px;
-            background: #14b8a6;
-        }
-
-        img {
-            display: block;
-            margin: 8px 0 16px;
-            max-width: 100%;
-        }
-
-        h1,
-        h2,
-        h3 {
-            line-height: 1.25;
-        }
-
-        p,
-        li {
-            color: var(--muted);
-        }
-
-        a {
-            color: #0f766e;
-        }
-
-        hr {
-            border: 0;
-            border-top: 1px solid var(--line);
-        }
-
-        @media (max-width: 640px) {
-            main {
-                padding: 16px 12px 48px;
-            }
-
-            article {
-                padding: 20px;
-                border-radius: 12px;
-            }
-
-            .topbar {
-                align-items: flex-start;
-            }
-        }
-    </style>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#f8fafc" />
+    <link rel="stylesheet" href="./assets/css/site.css" />
+    <script src="./assets/js/site.js" defer></script>
 </head>
-
 <body>
-    <main>
-        <article>
-            <div class="topbar">
-                <div class="brand-strip"><span class="brand-dot"></span>MayudevID</div>
+    <a class="skip-link" href="#main-content">Skip to content / Langsung ke konten</a>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="site-brand" href="#top-en" data-nav-target="top" aria-label="MayudevID, back to top">
+                <span class="brand-mark" aria-hidden="true">m<span>.</span></span>
+                <span>MayudevID</span>
+            </a>
+            <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+                <a data-nav-target="projects" href="#projects-en" data-i18n-en="Projects" data-i18n-id="Proyek">Projects</a>
+                <a data-nav-target="experience" href="#experience-en" data-i18n-en="Experience" data-i18n-id="Pengalaman">Experience</a>
+                <a data-nav-target="skills" href="#skills-en" data-i18n-en="Skills" data-i18n-id="Keahlian">Skills</a>
+                <a data-nav-target="contact" href="#contact-en" data-i18n-en="Contact" data-i18n-id="Kontak">Contact</a>
+            </nav>
+            <div class="header-actions">
                 <div class="language-switch" role="group" aria-label="Language switcher">
                     <button type="button" data-language-button="en" aria-label="Switch to English" aria-pressed="true">EN</button>
                     <button type="button" data-language-button="id" aria-label="Ganti ke Bahasa Indonesia" aria-pressed="false">ID</button>
                 </div>
+                <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
-            {% capture portfolio_markdown %}{% include_relative portfolio/portfolio.md %}{% endcapture %}
-            {% capture portfolio_markdown_en %}{% include_relative portfolio/portfolio-en.md %}{% endcapture %}
-            <section data-language-content="en">
-                {{ portfolio_markdown_en | markdownify }}
-            </section>
-            <section data-language-content="id" hidden>
-                {{ portfolio_markdown | markdownify }}
-            </section>
-        </article>
+        </div>
+    </header>
+    <main id="main-content">
+        {% capture portfolio_markdown_en %}{% include_relative portfolio/portfolio-en.md %}{% endcapture %}
+        {% capture portfolio_markdown_id %}{% include_relative portfolio/portfolio.md %}{% endcapture %}
+        {% include portfolio-page.html lang="en" content=portfolio_markdown_en %}
+        {% include portfolio-page.html lang="id" content=portfolio_markdown_id %}
     </main>
-    <script>
-        (() => {
-            const languageButtons = document.querySelectorAll("[data-language-button]");
-            const languageContents = document.querySelectorAll("[data-language-content]");
-            const availableLanguages = ["id", "en"];
-
-            function getSavedLanguage() {
-                try {
-                    return localStorage.getItem("portfolioLanguage");
-                } catch {
-                    return null;
-                }
-            }
-
-            function saveLanguage(language) {
-                try {
-                    localStorage.setItem("portfolioLanguage", language);
-                } catch {
-                    // Keep switch working even when storage is unavailable.
-                }
-            }
-
-            function setLanguage(language) {
-                const nextLanguage = availableLanguages.includes(language) ? language : "en";
-
-                document.documentElement.lang = nextLanguage;
-                saveLanguage(nextLanguage);
-
-                languageButtons.forEach((button) => {
-                    button.setAttribute("aria-pressed", String(button.dataset.languageButton === nextLanguage));
-                });
-
-                languageContents.forEach((content) => {
-                    content.hidden = content.dataset.languageContent !== nextLanguage;
-                });
-            }
-
-            languageButtons.forEach((button) => {
-                button.addEventListener("click", () => setLanguage(button.dataset.languageButton));
-            });
-
-            setLanguage(getSavedLanguage() || "en");
-        })();
-    </script>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span>© <span data-current-year>2026</span> MayudevID</span>
+            <span data-i18n-en="Built with Jekyll · Hosted on GitHub Pages" data-i18n-id="Dibuat dengan Jekyll · Di-host di GitHub Pages">Built with Jekyll · Hosted on GitHub Pages</span>
+            <a href="https://github.com/mayudevID" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GitHub ↗</a>
+        </div>
+    </footer>
 </body>
-
 </html>
