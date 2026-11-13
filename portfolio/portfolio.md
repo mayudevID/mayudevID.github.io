@@ -235,7 +235,7 @@ Bloom adalah aplikasi produktivitas harian dengan fitur To-do List, Pomodoro Tim
 Repository: [github.com/mayudevID/bloom](https://github.com/mayudevID/bloom)
 
 <!-- PORTFOLIO:SECTION -->
-### 5. Cling! - Money Management App
+### 5. Cling! - Money Manager App
 <img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/mayudevID/cling/main/assets/cover.jpg" alt="Cling Cover" style="display:block;width:100%;max-width:620px;height:auto;margin:12px auto 18px;border-radius:12px;" />
 
 Cling! adalah aplikasi money management untuk tracking pemasukan-pengeluaran, budgeting, dan monitoring kondisi finansial.
