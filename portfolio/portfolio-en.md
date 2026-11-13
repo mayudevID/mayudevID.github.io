@@ -112,8 +112,6 @@ Bachelor of Information Systems, GPA 3.95/4.00 | Sep 2020 - Jul 2024
 
 Holy Smart is HW Group's employee learning platform for structured onboarding, competency building, individual development, and certification. The full-stack platform includes Flutter mobile apps, a React admin web app, and a Laravel API serving both mobile and web clients.
 
-**Technology**: Flutter (mobile) · React (admin web) · Laravel (mobile and web API)
-
 <img loading="lazy" decoding="async" src="./assets/holy_smart/5.png" alt="HolySmart admin web login screen" style="display:block;width:100%;max-width:900px;height:auto;margin:12px 0;border-radius:12px;" />
 
 **Main Features**
@@ -193,8 +191,6 @@ Ar-Rauda is an Islamic studies app that provides Qur'an murottal collections, le
 	<img loading="lazy" decoding="async" src="./assets/ar_rauda/4.png" alt="Ar-Rauda mobile app screenshot 4" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
 	<img loading="lazy" decoding="async" src="./assets/ar_rauda/5.png" alt="Ar-Rauda mobile app screenshot 5" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
 </div>
-
-Available on Google Play and App Store
 
 <div style="display:flex; gap:2px; align-items:center; flex-wrap:wrap;">
   <a href="https://play.google.com/store/apps/details?id=com.work.arraudhah&hl=en">

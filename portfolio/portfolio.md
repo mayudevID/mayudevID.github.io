@@ -112,8 +112,6 @@ S1 Sistem Informasi, IPK 3.95/4.00 | Sep 2020 - Jul 2024
 
 Holy Smart adalah platform pembelajaran karyawan HW Group untuk mendukung onboarding, peningkatan kompetensi, pengembangan individu, dan sertifikasi secara terstruktur. Platform full-stack ini mencakup aplikasi mobile yang dibangun dengan Flutter, admin web dengan React, serta API Laravel yang melayani aplikasi mobile dan web.
 
-**Teknologi**: Flutter (mobile) · React (admin web) · Laravel (API mobile dan web)
-
 <img loading="lazy" decoding="async" src="./assets/holy_smart/5.png" alt="Tampilan login admin web HolySmart" style="display:block;width:100%;max-width:900px;height:auto;margin:12px 0;border-radius:12px;" />
 
 **Fitur Utama**
@@ -193,8 +191,6 @@ Ar-Rauda adalah aplikasi kajian Islam yang menghadirkan koleksi murottal Al-Qur'
 	<img loading="lazy" decoding="async" src="./assets/ar_rauda/4.png" alt="Tangkapan layar aplikasi Ar-Rauda 4" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
 	<img loading="lazy" decoding="async" src="./assets/ar_rauda/5.png" alt="Tangkapan layar aplikasi Ar-Rauda 5" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
 </div>
-
-Tersedia di Google Play dan App Store
 
 <div style="display:flex; gap:2px; align-items:center; flex-wrap:wrap;">
   <a href="https://play.google.com/store/apps/details?id=com.work.arraudhah&hl=id">
