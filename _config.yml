@@ -6,5 +6,6 @@ description: "MayudevID | Maulana Yusuf's Portfolio"
 exclude:
   - PORTFOLIO_GUIDE.md
   - scripts
+  - vendor
   - Gemfile
   - Gemfile.lock
