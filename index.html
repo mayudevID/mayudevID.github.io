@@ -218,8 +218,8 @@
                     <button type="button" data-language-button="id" aria-pressed="false">ID</button>
                 </div>
             </div>
-            {% capture portfolio_markdown %}{% include_relative portfolio.md %}{% endcapture %}
-            {% capture portfolio_markdown_en %}{% include_relative portfolio-en.md %}{% endcapture %}
+            {% capture portfolio_markdown %}{% include_relative portfolio/portfolio.md %}{% endcapture %}
+            {% capture portfolio_markdown_en %}{% include_relative portfolio/portfolio-en.md %}{% endcapture %}
             <section data-language-content="en">
                 {{ portfolio_markdown_en | markdownify }}
             </section>
