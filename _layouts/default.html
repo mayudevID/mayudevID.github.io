@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'en' }}">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maulana Yusuf | Flutter &amp; Mobile Developer | MayudevID</title>
+    <meta name="description" content="Explore Maulana Yusuf's Flutter and mobile development portfolio, featuring Android and iOS apps, native integrations, and production releases." />
+    <meta name="author" content="Maulana Yusuf" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="{% if page.lang == 'id' %}https://mydv.my.id/id/{% else %}https://mydv.my.id/{% endif %}" />
+    <link rel="alternate" hreflang="en" href="https://mydv.my.id/" />
+    <link rel="alternate" hreflang="id" href="https://mydv.my.id/id/" />
+    <link rel="alternate" hreflang="x-default" href="https://mydv.my.id/" />
+
+    <meta name="google-site-verification" content="vvVXmwxXpFyMHO-Yhf4qhy7qRgbTwD_pnTpD8XuyDLY" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="{% if page.lang == 'id' %}id_ID{% else %}en_US{% endif %}" />
+    <meta property="og:site_name" content="MayudevID" />
+    <meta property="og:title" content="Maulana Yusuf | Flutter &amp; Mobile Developer" />
+    <meta property="og:description" content="Explore Flutter, Android, and iOS projects built by Maulana Yusuf, including production apps and native integrations." />
+    <meta property="og:url" content="{% if page.lang == 'id' %}https://mydv.my.id/id/{% else %}https://mydv.my.id/{% endif %}" />
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/mayudevID/bloom/main/assets/images/cover.png" />
+    <meta property="og:image:alt" content="Projects, experience, and mobile application development work." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@mayudevID" />
+    <meta name="twitter:title" content="Maulana Yusuf | Flutter &amp; Mobile Developer" />
+    <meta name="twitter:description" content="Explore Flutter, Android, and iOS projects built by Maulana Yusuf, including production apps and native integrations." />
+    <meta name="twitter:image"
+        content="https://raw.githubusercontent.com/mayudevID/bloom/main/assets/images/cover.png" />
+    <meta name="twitter:image:alt" content="Projects, experience, and mobile application development work." />
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Maulana Yusuf",
+            "alternateName": "MayudevID",
+            "jobTitle": "Mobile Developer",
+            "url": "https://mydv.my.id/",
+            "email": "mailto:ymaulana089@gmail.com",
+            "telephone": "+6285811591353",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Tangerang Selatan",
+                "addressCountry": "ID"
+            },
+            "sameAs": [
+                "https://github.com/mayudevID",
+                "https://www.linkedin.com/in/maulana-yusuf-b87393201"
+            ]
+        }
+    </script>
+
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#f8fafc" />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+    <script src="/assets/js/site.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content / Langsung ke konten</a>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="site-brand" href="#top-{{ page.lang }}" aria-label="MayudevID, back to top">
+                <span class="brand-mark" aria-hidden="true">m<span>.</span></span>
+                <span>MayudevID</span>
+            </a>
+            <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+                <a href="#projects-{{ page.lang }}">{% if page.lang == 'id' %}Proyek{% else %}Projects{% endif %}</a>
+                <a href="#experience-{{ page.lang }}">{% if page.lang == 'id' %}Pengalaman{% else %}Experience{% endif %}</a>
+                <a href="#skills-{{ page.lang }}">{% if page.lang == 'id' %}Keahlian{% else %}Skills{% endif %}</a>
+                <a href="#contact-{{ page.lang }}">{% if page.lang == 'id' %}Kontak{% else %}Contact{% endif %}</a>
+            </nav>
+            <div class="header-actions">
+                <nav class="language-switch" aria-label="Language">
+                    <a href="/" lang="en" hreflang="en"{% if page.lang == 'en' %} aria-current="page"{% endif %} aria-label="English">EN</a>
+                    <a href="/id/" lang="id" hreflang="id"{% if page.lang == 'id' %} aria-current="page"{% endif %} aria-label="Bahasa Indonesia">ID</a>
+                </nav>
+                <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main id="main-content">
+        {{ content }}
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span>© <span data-current-year>2026</span> MayudevID</span>
+            <span>{% if page.lang == 'id' %}Dibuat dengan Jekyll · Di-host di GitHub Pages{% else %}Built with Jekyll · Hosted on GitHub Pages{% endif %}</span>
+            <a href="https://github.com/mayudevID" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GitHub ↗</a>
+        </div>
+    </footer>
+</body>
+</html>

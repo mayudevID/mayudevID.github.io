@@ -7,7 +7,7 @@ Personal brand for my work and journey as a Mobile Developer, focused on Android
 - LinkedIn: [Maulana Yusuf](https://www.linkedin.com/in/maulana-yusuf-b87393201)
 - GitHub: [mayudevID](https://github.com/mayudevID)
 
-[![Download CV](https://img.shields.io/badge/Download%20CV-PDF-0f766e?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](./portfolio/cv_maulana_yusuf.pdf)
+[![Download CV](https://img.shields.io/badge/Download%20CV-PDF-0f766e?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](/portfolio/cv_maulana_yusuf.pdf)
 
 ---
 
@@ -112,7 +112,7 @@ Bachelor of Information Systems, GPA 3.95/4.00 | Sep 2020 - Jul 2024
 
 Holy Smart is HW Group's employee learning platform for structured onboarding, competency building, individual development, and certification. The full-stack platform includes Flutter mobile apps, a React admin web app, and a Laravel API serving both mobile and web clients.
 
-<img loading="lazy" decoding="async" src="./assets/holy_smart/5.png" alt="HolySmart admin web login screen" style="display:block;width:100%;max-width:900px;height:auto;margin:12px 0;border-radius:12px;" />
+<img loading="lazy" decoding="async" src="/assets/holy_smart/5.png" alt="HolySmart admin web login screen" style="display:block;width:100%;max-width:900px;height:auto;margin:12px 0;border-radius:12px;" />
 
 **Main Features**
 
@@ -123,18 +123,18 @@ Holy Smart is HW Group's employee learning platform for structured onboarding, c
 - Certificates after completing selected learning journeys
 
 <div class="screenshot-gallery" role="region" aria-label="Holy Smart mobile app screenshots" tabindex="0" style="overflow-x:auto;display:flex;gap:12px;padding:12px 0;-webkit-overflow-scrolling:touch;align-items:center;">
-	<img loading="lazy" decoding="async" src="./assets/holy_smart/1.png" alt="Holy Smart screenshot 1" style="flex:0 0 auto;height:320px;width:200px;max-width:90%;object-fit:cover;border-radius:12px;" />
-	<img loading="lazy" decoding="async" src="./assets/holy_smart/2.png" alt="Holy Smart screenshot 2" style="flex:0 0 auto;height:320px;width:200px;max-width:90%;object-fit:cover;border-radius:12px;" />
-	<img loading="lazy" decoding="async" src="./assets/holy_smart/3.png" alt="Holy Smart screenshot 3" style="flex:0 0 auto;height:320px;width:200px;max-width:90%;object-fit:cover;border-radius:12px;" />
-	<img loading="lazy" decoding="async" src="./assets/holy_smart/4.png" alt="Holy Smart screenshot 4" style="flex:0 0 auto;height:320px;width:200px;max-width:90%;object-fit:cover;border-radius:12px;" />
+	<img loading="lazy" decoding="async" src="/assets/holy_smart/1.png" alt="Holy Smart screenshot 1" style="flex:0 0 auto;height:320px;width:200px;max-width:90%;object-fit:cover;border-radius:12px;" />
+	<img loading="lazy" decoding="async" src="/assets/holy_smart/2.png" alt="Holy Smart screenshot 2" style="flex:0 0 auto;height:320px;width:200px;max-width:90%;object-fit:cover;border-radius:12px;" />
+	<img loading="lazy" decoding="async" src="/assets/holy_smart/3.png" alt="Holy Smart screenshot 3" style="flex:0 0 auto;height:320px;width:200px;max-width:90%;object-fit:cover;border-radius:12px;" />
+	<img loading="lazy" decoding="async" src="/assets/holy_smart/4.png" alt="Holy Smart screenshot 4" style="flex:0 0 auto;height:320px;width:200px;max-width:90%;object-fit:cover;border-radius:12px;" />
 </div>
 
 <div style="display:flex; gap:2px; align-items:center; flex-wrap:wrap;">
   <a href="https://play.google.com/store/apps/details?id=com.hwgroup.holysmart">
-    <img loading="lazy" decoding="async" src="./assets/play_store/google_play_badge.png" alt="Get it on Google Play" style="width:200px;height:60px;object-fit:contain;" />
+    <img loading="lazy" decoding="async" src="/assets/play_store/google_play_badge.png" alt="Get it on Google Play" style="width:200px;height:60px;object-fit:contain;" />
   </a>
   <a href="https://apps.apple.com/us/app/holy-smart/id6789028854">
-    <img loading="lazy" decoding="async" src="./assets/app_store/app_store.svg" alt="Download on the App Store" style="width:200px;height:60px;object-fit:contain;" />
+    <img loading="lazy" decoding="async" src="/assets/app_store/app_store.svg" alt="Download on the App Store" style="width:200px;height:60px;object-fit:contain;" />
   </a>
 </div>
 
@@ -152,19 +152,19 @@ An attendance app for HW Group employees.
 - Asset management
 
 <div class="screenshot-gallery" role="region" aria-label="Holy World mobile app screenshots" tabindex="0" style="overflow-x:auto;display:flex;gap:12px;padding:12px 0;-webkit-overflow-scrolling:touch;align-items:center;">
-	<img loading="lazy" decoding="async" src="./assets/holy_world/1.webp" alt="Holy World screenshot 1" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
-	<img loading="lazy" decoding="async" src="./assets/holy_world/2.webp" alt="Holy World screenshot 2" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
-	<img loading="lazy" decoding="async" src="./assets/holy_world/3.webp" alt="Holy World screenshot 3" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
-	<img loading="lazy" decoding="async" src="./assets/holy_world/4.webp" alt="Holy World screenshot 4" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
-	<img loading="lazy" decoding="async" src="./assets/holy_world/5.webp" alt="Holy World screenshot 5" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img loading="lazy" decoding="async" src="/assets/holy_world/1.webp" alt="Holy World screenshot 1" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img loading="lazy" decoding="async" src="/assets/holy_world/2.webp" alt="Holy World screenshot 2" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img loading="lazy" decoding="async" src="/assets/holy_world/3.webp" alt="Holy World screenshot 3" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img loading="lazy" decoding="async" src="/assets/holy_world/4.webp" alt="Holy World screenshot 4" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img loading="lazy" decoding="async" src="/assets/holy_world/5.webp" alt="Holy World screenshot 5" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
 </div>
 
 <div style="display:flex; gap:2px; align-items:center; flex-wrap:wrap;">
   <a href="https://play.google.com/store/apps/details?id=com.holywingsindonesia.holywingsattendance">
-    <img loading="lazy" decoding="async" src="./assets/play_store/google_play_badge.png" alt="Get it on Google Play" style="width:200px;height:60px;object-fit:contain;" />
+    <img loading="lazy" decoding="async" src="/assets/play_store/google_play_badge.png" alt="Get it on Google Play" style="width:200px;height:60px;object-fit:contain;" />
   </a>
   <a href="https://apps.apple.com/id/app/holyworld-mobile/id1553614359">
-    <img loading="lazy" decoding="async" src="./assets/app_store/app_store.svg" alt="Download on the App Store" style="width:200px;height:60px;object-fit:contain;" />
+    <img loading="lazy" decoding="async" src="/assets/app_store/app_store.svg" alt="Download on the App Store" style="width:200px;height:60px;object-fit:contain;" />
   </a>
 </div>
 
@@ -185,17 +185,17 @@ Ar-Rauda is an Islamic studies app that provides Qur'an murottal collections, le
 - Islamic learning roadmap (structured materials)
 
 <div class="screenshot-gallery" role="region" aria-label="Ar-Rauda mobile app screenshots" tabindex="0" style="overflow-x:auto;display:flex;gap:12px;padding:12px 0;-webkit-overflow-scrolling:touch;align-items:center;">
-	<img loading="lazy" decoding="async" src="./assets/ar_rauda/1.png" alt="Ar-Rauda mobile app screenshot 1" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
-	<img loading="lazy" decoding="async" src="./assets/ar_rauda/2.png" alt="Ar-Rauda mobile app screenshot 2" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
-	<img loading="lazy" decoding="async" src="./assets/ar_rauda/3.png" alt="Ar-Rauda mobile app screenshot 3" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
-	<img loading="lazy" decoding="async" src="./assets/ar_rauda/4.png" alt="Ar-Rauda mobile app screenshot 4" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
-	<img loading="lazy" decoding="async" src="./assets/ar_rauda/5.png" alt="Ar-Rauda mobile app screenshot 5" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img loading="lazy" decoding="async" src="/assets/ar_rauda/1.png" alt="Ar-Rauda mobile app screenshot 1" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img loading="lazy" decoding="async" src="/assets/ar_rauda/2.png" alt="Ar-Rauda mobile app screenshot 2" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img loading="lazy" decoding="async" src="/assets/ar_rauda/3.png" alt="Ar-Rauda mobile app screenshot 3" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img loading="lazy" decoding="async" src="/assets/ar_rauda/4.png" alt="Ar-Rauda mobile app screenshot 4" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
+	<img loading="lazy" decoding="async" src="/assets/ar_rauda/5.png" alt="Ar-Rauda mobile app screenshot 5" style="flex:0 0 auto;height:320px;width:auto;max-width:90%;object-fit:contain;border-radius:12px;" />
 </div>
 
 <div style="display:flex; gap:2px; align-items:center; flex-wrap:wrap;">
   <a href="https://play.google.com/store/apps/details?id=com.work.arraudhah&hl=en">
     <img loading="lazy" decoding="async"
-      src="./assets/play_store/google_play_badge.png"
+      src="/assets/play_store/google_play_badge.png"
       alt="Get it on Google Play"
       style="width:200px;height:60px;object-fit:contain;"
     />
@@ -203,7 +203,7 @@ Ar-Rauda is an Islamic studies app that provides Qur'an murottal collections, le
 
   <a href="https://apps.apple.com/id/app/ar-rauda/id6762336087">
     <img loading="lazy" decoding="async"
-      src="./assets/app_store/app_store.svg"
+      src="/assets/app_store/app_store.svg"
       alt="Download on the App Store"
       style="width:200px;height:60px;object-fit:contain;"
     />
