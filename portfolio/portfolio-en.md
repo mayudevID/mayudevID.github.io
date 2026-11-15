@@ -108,7 +108,7 @@ Bachelor of Information Systems, GPA 3.95/4.00 | Sep 2020 - Jul 2024
 <!-- PORTFOLIO:SECTION -->
 ## Featured Projects
 
-### 1. Holy Smart
+### Holy Smart
 
 Holy Smart is HW Group's employee learning platform for structured onboarding, competency building, individual development, and certification. The full-stack platform includes Flutter mobile apps, a React admin web app, and a Laravel API serving both mobile and web clients.
 
@@ -139,7 +139,7 @@ Holy Smart is HW Group's employee learning platform for structured onboarding, c
 </div>
 
 <!-- PORTFOLIO:SECTION -->
-### 2. Holy World
+### Holy World
 
 An attendance app for HW Group employees.
 
@@ -169,7 +169,7 @@ An attendance app for HW Group employees.
 </div>
 
 <!-- PORTFOLIO:SECTION -->
-### 3. Ar-Rauda - Islamic Studies and Qur'an Murottal
+### Ar-Rauda - Islamic Studies and Qur'an Murottal
 
 Ar-Rauda is an Islamic studies app that provides Qur'an murottal collections, lectures, and other religious learning materials.
 
@@ -211,7 +211,7 @@ Ar-Rauda is an Islamic studies app that provides Qur'an murottal collections, le
 </div>
 
 <!-- PORTFOLIO:SECTION -->
-### 4. Bloom - Productivity App
+### Bloom - Productivity App
 <img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/mayudevID/bloom/main/assets/images/cover.png" alt="Bloom Cover" style="display:block;width:100%;max-width:620px;height:auto;margin:12px auto 18px;border-radius:12px;" />
 
 Bloom is a daily productivity app with To-do List, Pomodoro Timer, Habit Tracker, and notification-based reminder features.
@@ -231,7 +231,7 @@ Bloom is a daily productivity app with To-do List, Pomodoro Timer, Habit Tracker
 Repository: [github.com/mayudevID/bloom](https://github.com/mayudevID/bloom)
 
 <!-- PORTFOLIO:SECTION -->
-### 5. Cling! - Money Manager App
+### Cling! - Money Manager App
 <img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/mayudevID/cling/main/assets/cover.jpg" alt="Cling Cover" style="display:block;width:100%;max-width:620px;height:auto;margin:12px auto 18px;border-radius:12px;" />
 
 Cling! is a money management app for tracking income and expenses, budgeting, and monitoring financial condition.
@@ -252,7 +252,7 @@ Cling! is a money management app for tracking income and expenses, budgeting, an
 Repository: [github.com/mayudevID/cling](https://github.com/mayudevID/cling)
 
 <!-- PORTFOLIO:SECTION -->
-### 6. KBBI Daring App
+### KBBI Daring App
 <img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/mayudevID/kbbi_daring_app/master/cover.png" alt="KBBI Daring Cover" style="display:block;width:100%;max-width:620px;height:auto;margin:12px auto 18px;border-radius:12px;" />
 
 Android app for online KBBI vocabulary search powered by an API.
