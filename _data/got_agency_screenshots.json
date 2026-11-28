@@ -1,0 +1,51 @@
+[
+  {
+    "url": "https://play-lh.googleusercontent.com/jvBPTIZEMiKLaWgrxF5xCFaEJLUhZxPDAEc7cpHa1kDlB389rT7JC_4o5aT7wx2tRoMjUuxX-msj8rDlSneeGw=s0",
+    "local_path": "/assets/projects/got_agency/1.png",
+    "fallback_url": "https://play-lh.googleusercontent.com/jvBPTIZEMiKLaWgrxF5xCFaEJLUhZxPDAEc7cpHa1kDlB389rT7JC_4o5aT7wx2tRoMjUuxX-msj8rDlSneeGw=w526-h296",
+    "alt_id": "GOT Agency — Dashboard ponsel",
+    "alt_en": "GOT Agency — Phone dashboard"
+  },
+  {
+    "url": "https://play-lh.googleusercontent.com/3O8mLpf2-rFCqIlWGyFyPcQ0ZRUsBDFf5xVaWaAwPo9cksC-v8qGBKGNhnMXFRSnpIHOMgqdafiQroHSOtIT=s0",
+    "local_path": "/assets/projects/got_agency/2.png",
+    "fallback_url": "https://play-lh.googleusercontent.com/3O8mLpf2-rFCqIlWGyFyPcQ0ZRUsBDFf5xVaWaAwPo9cksC-v8qGBKGNhnMXFRSnpIHOMgqdafiQroHSOtIT=w526-h296",
+    "alt_id": "GOT Agency — Absensi ponsel",
+    "alt_en": "GOT Agency — Phone attendance"
+  },
+  {
+    "url": "https://play-lh.googleusercontent.com/KdLD1CP8HFJKyODG98nZK1pQblerkDh3MaK3I35YS-18JjGRtNYDJAPNhgIwvn0JC0Bh4HKug8lrsjJOqkGSZw=s0",
+    "local_path": "/assets/projects/got_agency/3.png",
+    "fallback_url": "https://play-lh.googleusercontent.com/KdLD1CP8HFJKyODG98nZK1pQblerkDh3MaK3I35YS-18JjGRtNYDJAPNhgIwvn0JC0Bh4HKug8lrsjJOqkGSZw=w526-h296",
+    "alt_id": "GOT Agency — Riwayat absensi ponsel",
+    "alt_en": "GOT Agency — Phone attendance history"
+  },
+  {
+    "url": "https://play-lh.googleusercontent.com/7vA1U0WxSdt2qWThqZviqIBMehP1nf0G_DCBXaLnxDKU9AKgSGemLOZPtnxZF2Pzv-0GXh0IyueGALhh3z4=s0",
+    "local_path": "/assets/projects/got_agency/4.png",
+    "fallback_url": "https://play-lh.googleusercontent.com/7vA1U0WxSdt2qWThqZviqIBMehP1nf0G_DCBXaLnxDKU9AKgSGemLOZPtnxZF2Pzv-0GXh0IyueGALhh3z4=w526-h296",
+    "alt_id": "GOT Agency — Profil ponsel",
+    "alt_en": "GOT Agency — Phone profile"
+  },
+  {
+    "url": "https://play-lh.googleusercontent.com/W3XlPVOshGoCQTalpMfspKLDO7FTRLCApU7Z7oRGsjZW7EMSf-LGP1D7ts_WEPAI7d7fQs10EyfNYuIexW9X=s0",
+    "local_path": "/assets/projects/got_agency/5.png",
+    "fallback_url": "https://play-lh.googleusercontent.com/W3XlPVOshGoCQTalpMfspKLDO7FTRLCApU7Z7oRGsjZW7EMSf-LGP1D7ts_WEPAI7d7fQs10EyfNYuIexW9X=w526-h296",
+    "alt_id": "GOT Agency — Dashboard tablet",
+    "alt_en": "GOT Agency — Tablet dashboard"
+  },
+  {
+    "url": "https://play-lh.googleusercontent.com/sME_3ASnDuzVBV8vZh7k35MF87A1-LH66NjZhq-1W7p2SImuBTcRG_l3JsOrtEgGkRKmmLsfhA2ZIn5qDH9r=s0",
+    "local_path": "/assets/projects/got_agency/6.png",
+    "fallback_url": "https://play-lh.googleusercontent.com/sME_3ASnDuzVBV8vZh7k35MF87A1-LH66NjZhq-1W7p2SImuBTcRG_l3JsOrtEgGkRKmmLsfhA2ZIn5qDH9r=w526-h296",
+    "alt_id": "GOT Agency — Absensi tablet",
+    "alt_en": "GOT Agency — Tablet attendance"
+  },
+  {
+    "url": "https://play-lh.googleusercontent.com/O0E9gQVfSVZv2eb5mHPpTD9WXAslmgrEBxJTmV5W6E67CFeJYB1crz6D4E58YUqw7SdH-X-mCNdU41rbIvTWAA=s0",
+    "local_path": "/assets/projects/got_agency/7.png",
+    "fallback_url": "https://play-lh.googleusercontent.com/O0E9gQVfSVZv2eb5mHPpTD9WXAslmgrEBxJTmV5W6E67CFeJYB1crz6D4E58YUqw7SdH-X-mCNdU41rbIvTWAA=w526-h296",
+    "alt_id": "GOT Agency — Profil tablet",
+    "alt_en": "GOT Agency — Tablet profile"
+  }
+]

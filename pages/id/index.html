@@ -1,0 +1,10 @@
+---
+layout: default
+lang: id
+is_home: true
+permalink: /id/
+seo_indexable: true
+last_modified_at: 2026-11-27
+---
+{% capture portfolio_markdown %}{% include_relative portfolio.md %}{% endcapture %}
+{% include portfolio-page.html lang="id" content=portfolio_markdown %}

@@ -1,0 +1,12 @@
+{% assign project = include.project %}
+{% assign lang = include.lang %}
+{% assign localized = project[lang] %}
+{% assign cover = project.screenshots | first %}
+<article class="personal-card prose">
+  <h3>{{ project.name | escape }}</h3>
+  {% if cover %}<img src="{{ cover.src | escape }}" alt="{% if lang == 'id' %}{{ cover.alt_id | escape }}{% else %}{{ cover.alt_en | escape }}{% endif %}" loading="lazy" decoding="async" />{% endif %}
+  <p>{{ localized.summary | escape }}</p>
+  <p><strong>{% if lang == 'id' %}Teknologi:{% else %}Technologies:{% endif %}</strong> {{ project.technologies | join: ', ' | escape }}</p>
+  {% for link in project.links %}<p><a href="{{ link.url | escape }}" target="_blank" rel="noopener noreferrer">{% if lang == 'id' %}{{ link.label_id | escape }}{% else %}{{ link.label_en | escape }}{% endif %} ↗</a></p>{% endfor %}
+  <p><a class="text-link" href="{% if lang == 'id' %}/id/projects/{{ project.slug }}/{% else %}/en/projects/{{ project.slug }}/{% endif %}">{% if lang == 'id' %}Lihat detail proyek {{ project.name | escape }}{% else %}Explore {{ project.name | escape }} project details{% endif %}</a></p>
+</article>

@@ -1,0 +1,45 @@
+author: Maulana Yusuf
+site_name: MayudevID
+robots: index, follow
+social_image: /assets/seo/og-cover.png
+social_image_width: 1200
+social_image_height: 630
+person:
+  id: https://mydv.my.id/#person
+  name: Maulana Yusuf
+  alternate_name: MayudevID
+  job_title: Flutter & Mobile Developer
+  description: Mobile developer focused on Flutter applications for Android and iOS, native integrations, and production delivery.
+  same_as:
+    - https://github.com/mayudevID
+    - https://www.linkedin.com/in/maulana-yusuf-b87393201
+  knows_about:
+    - Flutter
+    - Dart
+    - Android Development
+    - iOS Development
+    - Mobile Application Development
+    - Kotlin
+    - Native Mobile Integration
+    - REST API Integration
+    - CI/CD
+  alumni_of: Universitas Pembangunan Nasional Veteran Jakarta
+website_id: https://mydv.my.id/#website
+hreflang:
+  en: /en/
+  id: /id/
+  x-default: /en/
+en:
+  title: Maulana Yusuf | Flutter & Mobile App Developer
+  description: Flutter developer specializing in Android and iOS applications, native integrations, and production-ready mobile solutions. Explore my projects and experience.
+  locale: en_US
+  alternate_locale: id_ID
+  social_image_alt: MayudevID portfolio for Maulana Yusuf, Flutter and mobile developer
+  profile_id: https://mydv.my.id/en/#profilepage
+id:
+  title: Maulana Yusuf | Flutter & Mobile Developer Indonesia
+  description: Portofolio Flutter Developer Indonesia dengan pengalaman membangun aplikasi Android dan iOS, integrasi native, serta pengembangan aplikasi produksi.
+  locale: id_ID
+  alternate_locale: en_US
+  social_image_alt: Portofolio MayudevID oleh Maulana Yusuf, Flutter dan mobile developer
+  profile_id: https://mydv.my.id/id/#profilepage

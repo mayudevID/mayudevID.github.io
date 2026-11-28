@@ -1,0 +1,418 @@
+- project_id: holy-smart
+  case_study_context_en: "Holy Smart supports staff from onboarding through ongoing competency development, connecting learning activities, assessments and certificates in an employee-facing experience."
+  case_study_context_id: "Holy Smart mendukung karyawan dari onboarding hingga pengembangan kompetensi berkelanjutan, dengan aktivitas belajar, evaluasi, dan sertifikat."
+  case_study_contribution_en: "Contributed to the employee learning platform, including the mobile learning experience and application development."
+  case_study_contribution_id: "Berkontribusi pada platform pembelajaran karyawan, termasuk pengalaman belajar pada aplikasi mobile dan pengembangan aplikasi."
+  slug: holy-smart
+  name: Holy Smart
+  group: professional
+  status_en: Professional project
+  status_id: Proyek profesional
+  category_en: Employee learning platform
+  category_id: Platform pembelajaran karyawan
+  overview_en: Holy Smart is HW Group's employee learning platform for structured onboarding, competency building, individual development, and certification. It supports employee learning through a mobile application.
+  overview_id: Holy Smart adalah platform pembelajaran karyawan HW Group untuk onboarding, peningkatan kompetensi, pengembangan individu, dan sertifikasi. Platform ini mendukung pembelajaran karyawan melalui aplikasi mobile.
+  technologies: [Flutter, Dart, React, Laravel]
+  platforms: [Android, iOS, Web]
+  social_image: /assets/projects/holy_smart/1.png
+  features_en: [Learning journeys for onboarding and competency development, Courses and materials in video PDF and module formats, Tests and quizzes with assessments, Learning progress history and deadlines, Certificates after selected learning journeys]
+  features_id: [Learning Journey untuk onboarding dan pengembangan kompetensi, Kursus dan materi video PDF serta modul, Tes dan kuis dengan penilaian, Progres riwayat dan tenggat pembelajaran, Sertifikat setelah learning journey tertentu]
+  screenshots:
+    - src: /assets/projects/holy_smart/1.png
+      alt_en: Holy Smart mobile learning screen
+      alt_id: Tampilan pembelajaran mobile Holy Smart
+    - src: /assets/projects/holy_smart/2.png
+      alt_en: Holy Smart course screen
+      alt_id: Tampilan kursus Holy Smart
+    - src: /assets/projects/holy_smart/3.png
+      alt_en: Holy Smart learning screen
+      alt_id: Tampilan belajar Holy Smart
+    - src: /assets/projects/holy_smart/4.png
+      alt_en: Holy Smart application screen
+      alt_id: Tampilan aplikasi Holy Smart
+  links:
+    - label_en: Google Play
+      label_id: Google Play
+      url: https://play.google.com/store/apps/details?id=com.hwgroup.holysmart
+    - label_en: App Store
+      label_id: App Store
+      url: https://apps.apple.com/us/app/holy-smart/id6789028854
+  related: [holy-world, dtg-soms]
+  en:
+    title: Holy Smart — Employee Learning Platform | MayudevID
+    description: Case study of HW Group's employee learning platform for onboarding, assessments and certification.
+    summary: An employee learning platform for onboarding, courses, assessments, progress tracking, and certification.
+  id:
+    title: Holy Smart — Platform Pembelajaran Karyawan | MayudevID
+    description: Studi kasus platform pembelajaran karyawan HW Group untuk onboarding, evaluasi, dan sertifikasi.
+    summary: Platform pembelajaran karyawan untuk onboarding, kursus, evaluasi, pemantauan progres, dan sertifikasi.
+
+- project_id: holy-world
+  case_study_context_en: "The project makes routine employee activities accessible from a mobile device, including viewing schedules, recording attendance and submitting work-related requests."
+  case_study_context_id: "Proyek ini memudahkan aktivitas rutin karyawan melalui perangkat mobile, termasuk melihat jadwal, mencatat absensi, dan mengajukan permintaan terkait pekerjaan."
+  case_study_contribution_en: "Developed and maintained mobile features, including interface updates and attendance experience improvements."
+  case_study_contribution_id: "Mengembangkan dan memelihara fitur mobile, termasuk pembaruan antarmuka dan peningkatan pengalaman absensi."
+  slug: holy-world
+  name: Holy World
+  group: professional
+  status_en: Professional project
+  status_id: Proyek profesional
+  category_en: Employee attendance and operations app
+  category_id: Aplikasi absensi dan operasional karyawan
+  overview_en: Holy World is an attendance app for HW Group employees, with work schedules, shift changes, attendance requests, and asset management.
+  overview_id: Holy World adalah aplikasi absensi karyawan HW Group dengan jadwal kerja, pergantian shift, pengajuan absensi, dan pengelolaan aset.
+  technologies: [Flutter, Dart]
+  platforms: [Android, iOS]
+  social_image: /assets/projects/holy_world/2.webp
+  features_en: [Clock-in and clock-out attendance, Attendance history with photos, Attendance reminders and alarms, Work schedules shift changes and attendance requests, Asset management]
+  features_id: [Absensi masuk dan pulang, Riwayat absensi dengan foto, Pengingat dan alarm absensi, Jadwal kerja pergantian shift dan pengajuan absensi, Pengelolaan aset]
+  screenshots:
+    - src: /assets/projects/holy_world/1.webp
+      alt_en: Holy World attendance screen
+      alt_id: Tampilan absensi Holy World
+    - src: /assets/projects/holy_world/2.webp
+      alt_en: Holy World mobile app screen
+      alt_id: Tampilan aplikasi mobile Holy World
+    - src: /assets/projects/holy_world/3.webp
+      alt_en: Holy World mobile app screen
+      alt_id: Tampilan aplikasi mobile Holy World
+    - src: /assets/projects/holy_world/4.webp
+      alt_en: Holy World mobile app screen
+      alt_id: Tampilan aplikasi mobile Holy World
+    - src: /assets/projects/holy_world/5.webp
+      alt_en: Holy World mobile app screen
+      alt_id: Tampilan aplikasi mobile Holy World
+  links:
+    - label_en: Google Play
+      label_id: Google Play
+      url: https://play.google.com/store/apps/details?id=com.holywingsindonesia.holywingsattendance
+    - label_en: App Store
+      label_id: App Store
+      url: https://apps.apple.com/id/app/holyworld-mobile/id1553614359
+  related: [holy-smart, dtg-soms]
+  en:
+    title: Holy World — Flutter Employee App | MayudevID
+    description: A look at Holy World, HW Group's employee attendance and operations app, with Flutter screens for schedules, shifts, and attendance.
+    summary: An employee app for attendance, schedules, shift changes, and asset management.
+  id:
+    title: Holy World — Aplikasi Karyawan Flutter | MayudevID
+    description: Studi kasus Holy World, aplikasi absensi dan operasional karyawan HW Group dengan fitur jadwal, shift, dan absensi.
+    summary: Aplikasi karyawan untuk absensi, jadwal, pergantian shift, dan pengelolaan aset.
+
+- project_id: dtg-soms
+  # Public business context: https://career.lifeat23.id/ ; SOS feature confirmed by portfolio owner.
+  case_study_context_en: "Outlet 23 is a retail bottle shop chain in Indonesia and part of HW Group (Holywings Group). DTG SOMS supports its daily store operations by digitizing checklists and task documentation, while facilitating rapid communication in emergencies through SOS alerts."
+  case_study_context_id: "Outlet 23 merupakan jaringan toko ritel minuman beralkohol di Indonesia yang menjadi bagian dari HW Group (Holywings Group). DTG SOMS mendukung operasional harian outlet melalui digitalisasi checklist dan dokumentasi tugas, serta memfasilitasi komunikasi cepat dalam keadaan darurat melalui fitur SOS."
+  slug: dtg-soms
+  name: DTG SOMS
+  group: professional
+  status_en: Professional project
+  status_id: Proyek profesional
+  category_en: Store Operations Management System
+  category_id: Sistem Manajemen Operasional Outlet
+  overview_en: DTG SOMS is an internal store operations management system for Outlet 23. It digitizes operational standards, schedules, employee tasks, and supporting documentation through mobile and web applications. Its SOS feature sends emergency alerts to fellow users via real-time push notifications and relays the alerts to the web-based admin dashboard.
+  overview_id: DTG SOMS adalah sistem manajemen operasional internal untuk Outlet 23. Sistem ini mendigitalisasi standar operasional, jadwal, tugas karyawan, dan dokumentasi pendukung melalui aplikasi mobile dan web. Fitur SOS mengirimkan peringatan darurat kepada sesama pengguna melalui push notification secara real-time serta meneruskan peringatan tersebut ke dashboard admin web.
+  technologies: [Flutter, React, Laravel]
+  platforms: [Android, iOS, Web]
+  social_image: /assets/projects/dtg_soms/ios_1.jpg
+  features_en: [Digital operational checklists, Documented task evidence, SOS emergency alerts via real-time push notifications to fellow users and the web-based admin dashboard, Mobile task monitoring, Admin web application]
+  features_id: [Checklist operasional digital, Bukti dokumentasi tugas, Peringatan darurat SOS melalui push notification real-time kepada sesama pengguna serta dashboard admin web, Pemantauan tugas melalui mobile, Aplikasi admin web]
+  screenshots:
+    - src: /assets/projects/dtg_soms/ios_1.jpg
+      alt_en: DTG SOMS mobile operations screen
+      alt_id: Tampilan operasional mobile DTG SOMS
+    - src: /assets/projects/dtg_soms/ios_2.jpg
+      alt_en: DTG SOMS mobile application screen
+      alt_id: Tampilan aplikasi mobile DTG SOMS
+    - src: /assets/projects/dtg_soms/ios_3.jpg
+      alt_en: DTG SOMS mobile application screen
+      alt_id: Tampilan aplikasi mobile DTG SOMS
+    - src: /assets/projects/dtg_soms/ios_4.jpg
+      alt_en: DTG SOMS mobile application screen
+      alt_id: Tampilan aplikasi mobile DTG SOMS
+  links:
+    - label_en: Google Play
+      label_id: Google Play
+      url: https://play.google.com/store/apps/details?id=com.dtg.travelpath&hl=id
+    - label_en: App Store
+      label_id: App Store
+      url: https://apps.apple.com/id/app/dtg-soms/id6832190198
+  related: [holy-smart, holy-world]
+  en:
+    title: DTG SOMS — Outlet 23 Store Operations System | MayudevID
+    description: DTG SOMS is an internal operations system for Outlet 23 with digital checklists, task documentation, operational monitoring, and real-time SOS alerts.
+    summary: An internal operations system for Outlet 23 with digital checklists, task monitoring, and real-time SOS alerts.
+  id:
+    title: DTG SOMS — Sistem Operasional Outlet 23 | MayudevID
+    description: DTG SOMS merupakan sistem operasional internal Outlet 23 dengan checklist digital, dokumentasi tugas, pemantauan operasional, dan peringatan SOS real-time.
+    summary: Sistem operasional internal Outlet 23 dengan checklist digital, pemantauan tugas, dan peringatan SOS real-time.
+
+- project_id: ar-rauda
+  case_study_context_en: "The app combines listening, study materials and daily worship support. Learners can access audio and live learning alongside structured study activities."
+  case_study_context_id: "Aplikasi menyatukan aktivitas mendengarkan kajian, materi belajar, dan dukungan ibadah harian. Pengguna dapat mengakses audio dan pembelajaran langsung bersama aktivitas belajar terstruktur."
+  slug: ar-rauda
+  name: Ar-Rauda
+  group: professional
+  status_en: Professional project
+  status_id: Proyek profesional
+  category_en: Islamic learning and Qur'an audio app
+  category_id: Aplikasi kajian Islam dan audio Al-Qur'an
+  overview_en: Ar-Rauda provides Qur'an recitations, lectures, and Islamic learning materials through a mobile app.
+  overview_id: Ar-Rauda menyediakan murottal Al-Qur'an, kajian, dan materi pembelajaran Islam melalui aplikasi mobile.
+  technologies: [Flutter, Dart]
+  platforms: [Android, iOS]
+  social_image: /assets/projects/ar_rauda/1.png
+  features_en: [Qur'an recitations and Islamic studies, Shared lecture listening, Live-streamed lectures, Lecture notes, Prayer notifications and reminders, Qur'an reading and tajwid, Morning and evening dhikr, Structured learning roadmap]
+  features_id: [Murottal Al-Qur'an dan kajian Islam, Mendengarkan kajian bersama, Kajian live streaming, Catatan kajian, Notifikasi dan pengingat ibadah, Membaca Al-Qur'an dan tajwid, Dzikir pagi dan petang, Roadmap materi belajar]
+  screenshots:
+    - src: /assets/projects/ar_rauda/1.png
+      alt_en: Ar-Rauda Islamic learning app
+      alt_id: Aplikasi pembelajaran Islam Ar-Rauda
+    - src: /assets/projects/ar_rauda/2.png
+      alt_en: Ar-Rauda mobile app screen
+      alt_id: Tampilan aplikasi mobile Ar-Rauda
+    - src: /assets/projects/ar_rauda/3.png
+      alt_en: Ar-Rauda mobile app screen
+      alt_id: Tampilan aplikasi mobile Ar-Rauda
+    - src: /assets/projects/ar_rauda/4.png
+      alt_en: Ar-Rauda mobile app screen
+      alt_id: Tampilan aplikasi mobile Ar-Rauda
+    - src: /assets/projects/ar_rauda/5.png
+      alt_en: Ar-Rauda mobile app screen
+      alt_id: Tampilan aplikasi mobile Ar-Rauda
+  links:
+    - label_en: Google Play
+      label_id: Google Play
+      url: https://play.google.com/store/apps/details?id=com.work.arraudhah&hl=en
+    - label_en: App Store
+      label_id: App Store
+      url: https://apps.apple.com/id/app/ar-rauda/id6762336087
+  related: [holy-smart, cling]
+  en:
+    title: Ar-Rauda — Islamic Learning and Qur'an App | MayudevID
+    description: Ar-Rauda brings Qur'an recitations, lectures, reminders, and structured Islamic learning into a Flutter mobile application.
+    summary: An Islamic learning app with Qur'an audio, lectures, reminders, and study materials.
+  id:
+    title: Ar-Rauda — Aplikasi Kajian dan Al-Qur'an | MayudevID
+    description: Ar-Rauda menghadirkan murottal, kajian, pengingat ibadah, dan materi belajar Islam dalam aplikasi mobile Flutter.
+    summary: Aplikasi kajian Islam dengan audio Al-Qur'an, materi, dan pengingat ibadah.
+
+- project_id: got-agency
+  case_study_context_en: "The product connects agency and talent activities, from assignments and attendance to document management and compensation administration."
+  case_study_context_id: "Produk menghubungkan aktivitas agensi dan talent, mulai dari penugasan dan absensi hingga pengelolaan dokumen dan administrasi kompensasi."
+  case_study_contribution_en: "Contributed to end-to-end product development, including mobile features and agency and talent management workflows."
+  case_study_contribution_id: "Berkontribusi pada pengembangan produk end-to-end, termasuk fitur mobile dan alur manajemen agensi serta talent."
+  slug: got-agency
+  name: GOT Agency
+  group: professional
+  status_en: Professional project
+  status_id: Proyek profesional
+  category_en: Agency and talent management
+  category_id: Manajemen agensi dan talent
+  role_en: Full-stack developer
+  role_id: Full-stack developer
+  overview_en: GOT Agency (Girls of Tomorrow) is an Indonesian events and nightlife agency. Its mobile app and web system centralize agency and talent administration and operations.
+  overview_id: GOT Agency (Girls of Tomorrow) adalah agensi acara dan hiburan malam di Indonesia. Aplikasi mobile dan sistem web-nya memusatkan administrasi serta operasional agensi dan talent.
+  technologies: [Flutter, Laravel]
+  platforms: [Android, iOS, Web]
+  social_image: /assets/projects/got_agency/1.png
+  features_en: [Agency and talent records assignments schedules and shifts, Geofencing attendance and facial verification, Contract and document management, Requests and approvals, Payroll administration and compensation recaps, Audit logs]
+  features_id: [Data agensi dan talent penugasan jadwal serta shift, Absensi geofencing dan verifikasi wajah, Pengelolaan kontrak dan dokumen, Pengajuan dan persetujuan, Administrasi payroll dan rekap kompensasi, Audit log]
+  screenshots_data: got_agency_screenshots
+  links:
+    - label_en: Google Play
+      label_id: Google Play
+      url: https://play.google.com/store/apps/details?id=com.hwgroup.got
+    - label_en: App Store
+      label_id: App Store
+      url: https://apps.apple.com/us/app/got-agency/id6805425415
+  related: [holy-smart, dtg-soms]
+  en:
+    title: GOT Agency — Talent Management Application | MayudevID
+    description: GOT Agency combines Flutter mobile apps and a Laravel web system for talent assignments, attendance, documents, and agency operations.
+    summary: A mobile and web platform for agency and talent operations.
+  id:
+    title: GOT Agency — Aplikasi Manajemen Talent | MayudevID
+    description: GOT Agency memadukan aplikasi Flutter dan sistem web Laravel untuk penugasan talent, absensi, dokumen, dan operasional agensi.
+    summary: Platform mobile dan web untuk operasional agensi dan talent.
+
+- project_id: ktadbrnr
+  case_study_context_en: "The product combined digital membership with social interaction and communication. This case study documents historical work rather than advertising an active service."
+  case_study_context_id: "Produk menggabungkan keanggotaan digital dengan interaksi sosial dan komunikasi. Studi kasus ini mendokumentasikan pekerjaan historis, bukan menawarkan layanan aktif."
+  case_study_contribution_en: "Developed the cross-platform mobile application, including communication, interactive community features and application integrations."
+  case_study_contribution_id: "Mengembangkan aplikasi mobile lintas platform, termasuk komunikasi, fitur interaktif komunitas, dan integrasi aplikasi."
+  slug: ktadbrnr
+  name: KTADBRNR
+  group: professional
+  status_en: Archived; product operations discontinued in February 2026
+  status_id: Diarsipkan; operasional produk dihentikan pada Februari 2026
+  category_en: Community super app
+  category_id: Super app komunitas
+  role_en: Mobile Developer
+  role_id: Mobile Developer
+  overview_en: KTADBRNR combined digital membership cards with communication and interactive community features. I developed its cross-platform mobile application for production use. This page documents historical work; the app is no longer maintained and store availability is not implied.
+  overview_id: KTADBRNR menggabungkan kartu anggota digital dengan fitur komunikasi dan komunitas interaktif. Saya mengembangkan aplikasi mobile lintas platform untuk penggunaan produksi. Halaman ini mendokumentasikan pekerjaan historis; aplikasi tidak lagi dipelihara dan ketersediaannya di toko aplikasi tidak dijamin.
+  technologies: [Flutter, Dart]
+  platforms: [Android, iOS]
+  social_image: /assets/projects/ktadbrnr/1.jpg
+  features_en: [Digital membership cards and liveness detection, Real-time messaging and voice or video calling, Push notifications, Social feeds and short videos, AR filters, Payment and REST API integration]
+  features_id: [Kartu anggota digital dan liveness detection, Pesan real-time serta panggilan suara atau video, Push notification, Feed sosial dan video pendek, Filter AR, Integrasi pembayaran dan REST API]
+  screenshots_data: ktadbrnr_screenshots
+  historical_impact_en: 100,000+ Google Play downloads shown by the public listing on November 26, 2026.
+  historical_impact_id: Lebih dari 100.000 unduhan Google Play tercantum pada listing publik pada 26 November 2026.
+  links:
+    - label_en: Original Google Play listing (historical)
+      label_id: Listing Google Play asli (historis)
+      url: https://play.google.com/store/apps/details?id=com.brnr.app&hl=id
+  related: [got-agency]
+  en:
+    title: KTADBRNR — Archived Flutter Community App | MayudevID
+    description: Historical case study of KTADBRNR, an archived Flutter community app with digital membership, messaging, calls, and social features.
+    summary: Archived professional work documenting a cross-platform community application.
+  id:
+    title: KTADBRNR — Arsip Aplikasi Komunitas Flutter | MayudevID
+    description: Studi historis KTADBRNR, aplikasi komunitas Flutter yang diarsipkan dengan kartu anggota digital, pesan, panggilan, dan fitur sosial.
+    summary: Dokumentasi historis pekerjaan profesional pada aplikasi komunitas lintas platform.
+
+- project_id: emcare
+  case_study_context_en: "The patient-facing app supports access to healthcare around hospital visits. Product capabilities describe the publicly available application, not individual ownership of each feature."
+  case_study_context_id: "Aplikasi untuk pasien mendukung akses layanan kesehatan seputar kunjungan rumah sakit. Fitur produk menggambarkan aplikasi publik, bukan klaim kepemilikan pribadi atas setiap fitur."
+  case_study_contribution_en: "Contributed to the mobile development team as an intern at Suitmedia. Current store screenshots may differ from the internship-era version."
+  case_study_contribution_id: "Berkontribusi dalam tim pengembangan mobile sebagai peserta magang di Suitmedia. Screenshot toko aplikasi saat ini dapat berbeda dari versi saat magang."
+  slug: emcare
+  name: EMCare
+  group: professional
+  status_en: Internship contribution, February–June 2023
+  status_id: Kontribusi magang, Februari–Juni 2023
+  category_en: Digital healthcare
+  category_id: Layanan kesehatan digital
+  role_en: Mobile Developer Intern at Suitmedia; contributor on the development team
+  role_id: Mobile Developer Intern di Suitmedia; kontributor dalam tim pengembangan
+  overview_en: EMCare is a digital healthcare application for EMC Healthcare patients, connecting hospital services before, during, and after a visit. I contributed to its Flutter mobile application as part of Suitmedia's development team during my internship.
+  overview_id: EMCare adalah aplikasi layanan kesehatan digital bagi pasien EMC Healthcare untuk mengakses layanan rumah sakit sebelum, selama, dan setelah kunjungan. Saya berkontribusi pada aplikasi mobile Flutter sebagai bagian dari tim pengembangan Suitmedia saat magang.
+  technologies: [Flutter]
+  platforms: [Android, iOS]
+  social_image: /assets/projects/emcare/1.png
+  features_en: [Online appointments and doctor schedules, Hospital service information, Patient journey and queue tracking, Digital medical records visit history and medication information, Remote consultations and health information, Health tracking and loyalty features described in the public case study]
+  features_id: [Janji temu online dan jadwal dokter, Informasi layanan rumah sakit, Pelacakan perjalanan pasien dan antrean, Rekam medis digital riwayat kunjungan dan informasi obat, Konsultasi jarak jauh dan informasi kesehatan, Fitur kesehatan dan loyalitas yang dijelaskan pada studi kasus publik]
+  screenshots_data: emcare_screenshots
+  screenshot_note_en: Public product screenshots sourced from the EMCare Google Play listing; they may differ from the 2023 version.
+  screenshot_note_id: Screenshot produk publik bersumber dari listing Google Play EMCare dan dapat berbeda dari versi tahun 2023.
+  links:
+    - label_en: Suitmedia project reference
+      label_id: Referensi proyek Suitmedia
+      url: https://suitmedia.com/work/emc-mobile
+    - label_en: Google Play
+      label_id: Google Play
+      url: https://play.google.com/store/apps/details?id=id.emc
+    - label_en: App Store
+      label_id: App Store
+      url: https://apps.apple.com/id/app/emcare-by-emc-healthcare/id1660724645
+  related: [holy-smart, got-agency]
+  en:
+    title: EMCare — Flutter Healthcare App Contribution | MayudevID
+    description: Internship case study of a Flutter contribution to EMCare, EMC Healthcare's patient app, completed with Suitmedia's development team.
+    summary: A documented internship contribution to a patient-facing digital healthcare application.
+  id:
+    title: EMCare — Kontribusi Aplikasi Kesehatan Flutter | MayudevID
+    description: Studi kontribusi magang pada aplikasi pasien EMCare berbasis Flutter, dikerjakan bersama tim pengembangan Suitmedia.
+    summary: Dokumentasi kontribusi magang pada aplikasi layanan kesehatan digital bagi pasien.
+
+- project_id: bloom
+  slug: bloom
+  name: Bloom
+  group: personal
+  status_en: Personal project
+  status_id: Proyek personal
+  category_en: Productivity app
+  category_id: Aplikasi produktivitas
+  role_en: Personal project developer
+  role_id: Pengembang proyek personal
+  overview_en: Bloom is a daily productivity app with a to-do list, Pomodoro timer, habit tracker, and notification-based reminders.
+  overview_id: Bloom adalah aplikasi produktivitas harian dengan to-do list, timer Pomodoro, habit tracker, dan pengingat melalui notifikasi.
+  technologies: [Flutter, Dart, Firebase Authentication, Cloud Firestore, Firebase Storage, Firebase Analytics, BLoC, GetX, SharedPreferences, connectivity_plus]
+  platforms: [Android, iOS]
+  social_image: /assets/projects/bloom/cover.png
+  screenshots:
+    - src: /assets/projects/bloom/cover.png
+      alt_en: Bloom productivity app cover
+      alt_id: Sampul aplikasi produktivitas Bloom
+  links:
+    - label_en: Bloom source repository
+      label_id: Repositori kode Bloom
+      url: https://github.com/mayudevID/bloom
+  related: [cling]
+  en:
+    title: Bloom — Flutter Productivity App | MayudevID
+    description: Bloom is a personal Flutter productivity app with tasks, Pomodoro sessions, habit tracking, and reminders, backed by Firebase services.
+    summary: A personal productivity app combining task lists, focus sessions, habits, and reminders.
+  id:
+    title: Bloom — Aplikasi Produktivitas Flutter | MayudevID
+    description: Bloom adalah aplikasi produktivitas Flutter dengan daftar tugas, sesi Pomodoro, habit tracker, dan pengingat berbasis layanan Firebase.
+    summary: Aplikasi personal untuk mengelola tugas, fokus, kebiasaan, dan pengingat.
+
+- project_id: cling
+  slug: cling
+  name: Cling!
+  group: personal
+  status_en: Personal project
+  status_id: Proyek personal
+  category_en: Money management app
+  category_id: Aplikasi pengelolaan keuangan
+  role_en: Personal project developer
+  role_id: Pengembang proyek personal
+  overview_en: Cling! is a money management app for tracking income and expenses, budgeting, and monitoring personal financial activity.
+  overview_id: Cling! adalah aplikasi pengelolaan uang untuk mencatat pemasukan dan pengeluaran, membuat anggaran, serta memantau aktivitas keuangan pribadi.
+  technologies: [Flutter, Dart, Firebase Authentication, Cloud Firestore, Firebase Storage, Firebase Messaging, Crashlytics, Firebase Analytics, BLoC, get_it, sqflite, shared_preferences, connectivity_plus]
+  platforms: [Android, iOS]
+  social_image: /assets/projects/cling/cover.jpg
+  screenshots:
+    - src: /assets/projects/cling/cover.jpg
+      alt_en: Cling money management app cover
+      alt_id: Sampul aplikasi pengelolaan uang Cling
+  links:
+    - label_en: Cling source repository
+      label_id: Repositori kode Cling
+      url: https://github.com/mayudevID/cling
+  related: [bloom]
+  en:
+    title: Cling! — Flutter Money Management App | MayudevID
+    description: Cling! is a personal Flutter finance app for income and expense tracking, budgeting, and financial activity, using local storage and Firebase services.
+    summary: A personal finance app for tracking transactions, budgets, and financial activity.
+  id:
+    title: Cling! — Aplikasi Keuangan Flutter | MayudevID
+    description: Cling! adalah aplikasi keuangan personal Flutter untuk mencatat pemasukan dan pengeluaran, mengatur anggaran, serta memantau aktivitas keuangan.
+    summary: Aplikasi personal untuk mencatat transaksi, anggaran, dan aktivitas keuangan.
+
+- project_id: kbbi-daring
+  slug: kbbi-daring
+  name: KBBI Daring
+  group: personal
+  status_en: Personal project
+  status_id: Proyek personal
+  category_en: Indonesian dictionary app
+  category_id: Aplikasi kamus bahasa Indonesia
+  role_en: Personal project developer
+  role_id: Pengembang proyek personal
+  overview_en: An Android application for searching Indonesian dictionary vocabulary online through an API.
+  overview_id: Aplikasi Android untuk mencari kosakata kamus bahasa Indonesia secara daring melalui API.
+  technologies: [Kotlin, Android SDK, Retrofit, Gson, Room, Kotlin Coroutines, AndroidX Navigation]
+  platforms: [Android]
+  social_image: /assets/projects/kbbi_daring/cover.png
+  screenshots:
+    - src: /assets/projects/kbbi_daring/cover.png
+      alt_en: KBBI Daring dictionary app cover
+      alt_id: Sampul aplikasi kamus KBBI Daring
+  links:
+    - label_en: KBBI Daring source repository
+      label_id: Repositori kode KBBI Daring
+      url: https://github.com/mayudevID/kbbi_daring_app
+  related: []
+  en:
+    title: KBBI Daring — Kotlin Android Dictionary App | MayudevID
+    description: A personal Kotlin Android app for online Indonesian dictionary searches, using Retrofit and a local Room data layer.
+    summary: An Android dictionary search app connecting to an online vocabulary API.
+  id:
+    title: KBBI Daring — Aplikasi Kamus Android Kotlin | MayudevID
+    description: Aplikasi Android personal berbasis Kotlin untuk pencarian kamus bahasa Indonesia daring, dengan Retrofit dan penyimpanan lokal Room.
+    summary: Aplikasi Android untuk mencari kosakata melalui API kamus daring.

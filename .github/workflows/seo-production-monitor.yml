@@ -1,0 +1,42 @@
+name: Production SEO Monitor
+
+on:
+  schedule:
+    - cron: '0 20 * * 6'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: production-seo-monitor-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  monitor:
+    name: Check deployed production SEO
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+      - name: Build expected local route inventory
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --trace
+      - name: Validate expected inventory before network checks
+        run: python3 scripts/check_portfolio.py --site _site
+      - name: Check deployed production pages and crawl resources
+        id: production
+        run: python3 scripts/check_production_seo.py --json production-seo-report.json --markdown production-seo-report.md
+      - name: Upload machine and human readable report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-seo-${{ github.run_id }}
+          path: production-seo-report.*
+          if-no-files-found: warn
+          retention-days: 14

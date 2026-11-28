@@ -1,0 +1,69 @@
+{% assign lang = include.lang %}
+{% assign project = site.data.projects | where: 'project_id', include.project_id | first %}
+{% assign localized = project[lang] %}
+{% if lang == 'id' %}{% assign overview = project.overview_id %}{% assign category = project.category_id %}{% assign status = project.status_id %}{% assign role = project.role_id %}{% assign features = project.features_id %}{% else %}{% assign overview = project.overview_en %}{% assign category = project.category_en %}{% assign status = project.status_en %}{% assign role = project.role_en %}{% assign features = project.features_en %}{% endif %}
+{% if project.screenshots_data %}{% assign screenshots = site.data[project.screenshots_data] %}{% else %}{% assign screenshots = project.screenshots %}{% endif %}
+<article class="project-page container" aria-labelledby="project-title">
+  <nav class="breadcrumbs" aria-label="{% if lang == 'id' %}Jejak navigasi{% else %}Breadcrumb{% endif %}">
+    <ol>
+      <li><a href="{% if lang == 'id' %}/id/{% else %}/en/{% endif %}">{% if lang == 'id' %}Beranda{% else %}Home{% endif %}</a></li>
+      <li aria-current="page">{{ project.name | escape }}</li>
+    </ol>
+  </nav>
+  <header class="project-hero">
+    <p class="section-kicker">{{ category | escape }}</p>
+    <h1 id="project-title">{{ project.name | escape }}</h1>
+    <p class="project-summary">{{ localized.summary | escape }}</p>
+    <ul class="project-facts" aria-label="{% if lang == 'id' %}Klasifikasi proyek{% else %}Project classification{% endif %}">
+      <li>{{ status | escape }}</li>
+      {% if project.group == 'personal' %}<li>{% if lang == 'id' %}Proyek personal{% else %}Personal project{% endif %}</li>{% endif %}
+    </ul>
+    {% if screenshots and screenshots.size > 0 %}
+    <div class="project-cover{% if screenshots.size == 1 %} project-cover-single{% endif %}">
+      <div class="project-gallery project-header-gallery" role="region" aria-label="{% if lang == 'id' %}Galeri tangkapan layar {{ project.name | escape }}{% else %}{{ project.name | escape }} screenshot gallery{% endif %}"{% if screenshots.size > 1 %} tabindex="0"{% endif %}>
+        {% for shot in screenshots %}
+          {% assign shot_src = shot.src | default: shot.local_path %}
+          {% assign shot_alt = shot.alt_en | default: shot.alt_id %}
+          {% if lang == 'id' %}{% assign shot_alt = shot.alt_id | default: shot.alt_en %}{% endif %}
+          <img src="{{ shot_src | escape }}" alt="{{ shot_alt | escape }}" {% if forloop.first %}loading="eager" fetchpriority="high"{% else %}loading="lazy"{% endif %} decoding="async" />
+        {% endfor %}
+      </div>
+      {% if project.screenshot_note_en %}<p class="project-note project-gallery-note">{% if lang == 'id' %}{{ project.screenshot_note_id | escape }}{% else %}{{ project.screenshot_note_en | escape }}{% endif %}</p>{% endif %}
+    </div>
+    {% endif %}
+  </header>
+
+  <section class="project-section" aria-labelledby="project-overview-{{ project.slug }}">
+    <h2 id="project-overview-{{ project.slug }}">{% if lang == 'id' %}Ringkasan proyek{% else %}Project overview{% endif %}</h2>
+    <p>{{ overview | escape }}</p>
+  </section>
+  {% if project.case_study_context_en %}
+  <section class="project-section case-study-context" aria-labelledby="project-context-{{ project.slug }}">
+    <h2 id="project-context-{{ project.slug }}">{% if lang == 'id' %}Konteks proyek{% else %}Project context{% endif %}</h2>
+    <p>{% if lang == 'id' %}{{ project.case_study_context_id | escape }}{% else %}{{ project.case_study_context_en | escape }}{% endif %}</p>
+  </section>
+  {% endif %}
+  {% if role and role != empty %}<section class="project-section" aria-labelledby="project-role-{{ project.slug }}"><h2 id="project-role-{{ project.slug }}">{% if lang == 'id' %}Peran{% else %}Role{% endif %}</h2><p>{{ role | escape }}</p></section>{% endif %}
+  {% if project.case_study_contribution_en %}
+  <section class="project-section case-study-contribution" aria-labelledby="project-contribution-{{ project.slug }}">
+    <h2 id="project-contribution-{{ project.slug }}">{% if lang == 'id' %}Kontribusi pengembangan{% else %}Development contribution{% endif %}</h2>
+    <p>{% if lang == 'id' %}{{ project.case_study_contribution_id | escape }}{% else %}{{ project.case_study_contribution_en | escape }}{% endif %}</p>
+  </section>
+  {% endif %}
+  {% if features and features.size > 0 %}
+  <section class="project-section" aria-labelledby="project-features-{{ project.slug }}"><h2 id="project-features-{{ project.slug }}">{% if lang == 'id' %}Fitur utama{% else %}Key features{% endif %}</h2><ul>{% for feature in features %}<li>{{ feature | escape }}</li>{% endfor %}</ul></section>
+  {% endif %}
+  {% if project.technologies and project.technologies.size > 0 %}
+  <section class="project-section" aria-labelledby="project-technologies-{{ project.slug }}"><h2 id="project-technologies-{{ project.slug }}">{% if lang == 'id' %}Teknologi{% else %}Technologies{% endif %}</h2><ul class="tag-list">{% for technology in project.technologies %}<li>{{ technology | escape }}</li>{% endfor %}</ul></section>
+  {% endif %}
+  {% if project.platforms and project.platforms.size > 0 %}
+  <section class="project-section" aria-labelledby="project-platforms-{{ project.slug }}"><h2 id="project-platforms-{{ project.slug }}">{% if lang == 'id' %}Platform{% else %}Platforms{% endif %}</h2><ul class="tag-list">{% for platform in project.platforms %}<li>{{ platform | escape }}</li>{% endfor %}</ul></section>
+  {% endif %}
+  {% if project.historical_impact_en %}<section class="project-section"><h2>{% if lang == 'id' %}Dampak historis{% else %}Historical impact{% endif %}</h2><p>{% if lang == 'id' %}{{ project.historical_impact_id | escape }}{% else %}{{ project.historical_impact_en | escape }}{% endif %}</p></section>{% endif %}
+  {% if project.links and project.links.size > 0 %}
+  <section class="project-section" aria-labelledby="project-links-{{ project.slug }}"><h2 id="project-links-{{ project.slug }}">{% if lang == 'id' %}Tautan proyek{% else %}Project links{% endif %}</h2>{% include project-store-links.html project=project lang=lang %}</section>
+  {% endif %}
+  {% assign published_insights = site.data.insights | where: 'status', 'published' %}{% assign matched_insights = '' | split: '' %}{% for insight in published_insights %}{% if insight.related_projects contains project.project_id %}{% assign matched_insights = matched_insights | push: insight %}{% endif %}{% endfor %}{% if matched_insights.size > 0 %}
+  <nav class="project-section related-projects" aria-labelledby="related-insights-{{ project.slug }}"><h2 id="related-insights-{{ project.slug }}">{% if lang == 'id' %}Artikel terkait{% else %}Related engineering insights{% endif %}</h2><ul>{% for insight in matched_insights %}{% assign insight_path = insight.en_path %}{% if lang == 'id' %}{% assign insight_path = insight.id_path %}{% endif %}<li><a href="{{ insight_path | escape }}">{% if lang == 'id' %}{{ insight.title_id | escape }}{% else %}{{ insight.title_en | escape }}{% endif %}</a></li>{% endfor %}</ul></nav>{% endif %}
+  <p class="project-return"><a class="button button-primary" href="{% if lang == 'id' %}/id/#projects-id{% else %}/en/#projects-en{% endif %}">{% if lang == 'id' %}Kembali ke proyek{% else %}Return to portfolio{% endif %}</a></p>
+</article>

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page moved | MayudevID</title>
+  <link rel="canonical" href="{{ page.redirect_to | prepend: site.url | escape }}">
+  {% if page.url == '/' %}<meta name="google-site-verification" content="vvVXmwxXpFyMHO-Yhf4qhy7qRgbTwD_pnTpD8XuyDLY">{% endif %}
+  <meta name="robots" content="noindex, follow">
+  <script>
+    window.location.replace({{ page.redirect_to | jsonify }} + window.location.search + window.location.hash);
+  </script>
+  <meta http-equiv="refresh" content="0; url={{ page.redirect_to | escape }}">
+</head>
+<body>
+  <main><h1>Page moved</h1><p>Continue to <a href="{{ page.redirect_to | escape }}">the new page</a>.</p></main>
+</body>
+</html>

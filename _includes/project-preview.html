@@ -1,0 +1,30 @@
+{% assign preview_project = include.project %}
+{% assign preview_lang = include.lang %}
+{% assign preview_localized = preview_project[preview_lang] %}
+{% if preview_lang == 'id' %}{% assign preview_features = preview_project.features_id %}{% else %}{% assign preview_features = preview_project.features_en %}{% endif %}
+{% if preview_project.screenshots_data %}{% assign preview_shots = site.data[preview_project.screenshots_data] %}{% else %}{% assign preview_shots = preview_project.screenshots %}{% endif %}
+<div class="project-preview">
+  <p>{{ preview_localized.summary | escape }}</p>
+  {% if preview_project.project_id == 'ktadbrnr' %}<p class="project-note">{% if preview_lang == 'id' %}Proyek arsip; operasional dihentikan pada Februari 2026.{% else %}Archived project; operations discontinued in February 2026.{% endif %}</p>{% endif %}
+  {% if preview_features and preview_features.size > 0 %}
+  <h3>{% if preview_lang == 'id' %}Fitur pilihan{% else %}Selected features{% endif %}</h3>
+  <ul>{% for feature in preview_features limit:3 %}<li>{{ feature | escape }}</li>{% endfor %}</ul>
+  {% endif %}
+  {% if preview_project.technologies and preview_project.technologies.size > 0 %}
+  <h3>{% if preview_lang == 'id' %}Teknologi{% else %}Technologies{% endif %}</h3>
+  <ul class="tag-list">{% for technology in preview_project.technologies %}<li>{{ technology | escape }}</li>{% endfor %}</ul>
+  {% endif %}
+  {% if preview_shots and preview_shots.size > 0 %}
+  <h3>{% if preview_lang == 'id' %}Tangkapan layar pilihan{% else %}Selected screenshots{% endif %}</h3>
+  <div class="project-gallery preview-gallery" role="region" aria-label="{% if preview_lang == 'id' %}Galeri {{ preview_project.name | escape }}{% else %}{{ preview_project.name | escape }} screenshot gallery{% endif %}" tabindex="0">
+    {% assign preview_offset = 0 %}{% if preview_project.project_id == 'holy-world' %}{% assign preview_offset = 1 %}{% endif %}
+    {% for shot in preview_shots offset:preview_offset limit:3 %}
+      {% assign preview_src = shot.src | default: shot.local_path %}
+      {% assign preview_alt = shot.alt_en %}{% if preview_lang == 'id' %}{% assign preview_alt = shot.alt_id %}{% endif %}
+      <img src="{{ preview_src | escape }}" alt="{{ preview_alt | escape }}" loading="lazy" decoding="async">
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% if preview_project.screenshot_note_en %}<p class="project-note">{% if preview_lang == 'id' %}{{ preview_project.screenshot_note_id | escape }}{% else %}{{ preview_project.screenshot_note_en | escape }}{% endif %}</p>{% endif %}
+  {% include project-store-links.html project=preview_project lang=preview_lang %}
+</div>

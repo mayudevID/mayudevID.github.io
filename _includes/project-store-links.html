@@ -1,0 +1,19 @@
+{% assign store_project = include.project %}
+{% assign store_lang = include.lang %}
+{% if store_project.links and store_project.links.size > 0 %}
+<ul class="project-links">
+  {% for link in store_project.links %}
+    {% assign link_label = link.label_en %}{% if store_lang == 'id' %}{% assign link_label = link.label_id %}{% endif %}
+    {% assign is_suitmedia_reference = false %}{% if store_project.project_id == 'emcare' and link.url == 'https://suitmedia.com/work/emc-mobile' %}{% assign is_suitmedia_reference = true %}{% endif %}
+    <li{% if is_suitmedia_reference %} class="project-reference-row"{% endif %}>
+      {% if store_project.project_id != 'ktadbrnr' and link.url contains 'https://play.google.com/store/apps/details' %}
+      <a class="store-badge" href="{{ link.url | escape }}" target="_blank" rel="noopener noreferrer"><img src="/assets/platform/play_store/google_play_badge.png" loading="lazy" decoding="async" alt="{% if store_lang == 'id' %}{{ store_project.name | escape }} di Google Play{% else %}Get {{ store_project.name | escape }} on Google Play{% endif %}"></a>
+      {% elsif store_project.project_id != 'ktadbrnr' and link.url contains 'https://apps.apple.com/' %}
+      <a class="store-badge" href="{{ link.url | escape }}" target="_blank" rel="noopener noreferrer"><img src="/assets/platform/app_store/app_store.svg" loading="lazy" decoding="async" alt="{% if store_lang == 'id' %}{{ store_project.name | escape }} di App Store{% else %}Download {{ store_project.name | escape }} on the App Store{% endif %}"></a>
+      {% else %}
+      <a{% if is_suitmedia_reference %} class="project-reference-link"{% elsif store_project.group == 'personal' %} class="project-repository-link"{% endif %} href="{{ link.url | escape }}" target="_blank" rel="noopener noreferrer">{{ link_label | escape }} <span aria-hidden="true">↗</span></a>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% endif %}

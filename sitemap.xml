@@ -1,0 +1,26 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{% assign indexable_pages = site.pages | where: 'seo_indexable', true | sort: 'url' %}
+{% for sitemap_page in indexable_pages %}
+  {% assign sitemap_alternates = sitemap_page.hreflang | default: site.data.seo.hreflang %}
+  {% assign sitemap_canonical = sitemap_page.canonical_url %}
+  {% unless sitemap_canonical %}{% assign sitemap_canonical = sitemap_page.url | prepend: site.url %}{% endunless %}
+  <url>
+    <loc>{{ sitemap_canonical | xml_escape }}</loc>
+    {% if sitemap_page.last_modified_at %}<lastmod>{{ sitemap_page.last_modified_at | date_to_xmlschema }}</lastmod>{% endif %}
+    {% for alternate in sitemap_alternates %}
+      {% assign alternate_url = alternate[1] %}
+      {% unless alternate_url contains '://' %}{% assign alternate_url = alternate_url | prepend: site.url %}{% endunless %}
+      <xhtml:link rel="alternate" hreflang="{{ alternate[0] | xml_escape }}" href="{{ alternate_url | xml_escape }}" />
+    {% endfor %}
+  </url>
+{% endfor %}
+  <url>
+    <loc>https://mydv.my.id/portfolio/cv_maulana_yusuf.pdf</loc>
+  </url>
+</urlset>

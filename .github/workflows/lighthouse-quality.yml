@@ -1,0 +1,100 @@
+name: Lighthouse Quality
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lighthouse-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lighthouse:
+    name: Build and audit representative pages
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install pinned Lighthouse CI dependencies
+        run: npm ci
+      - name: Build production Jekyll output
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --trace
+      - name: Validate generated site and publication freeze
+        run: |
+          python3 scripts/check_portfolio.py --site _site
+          python3 scripts/test_portfolio_validator.py --site _site
+          node --check assets/js/site.js
+      - name: Record tool versions
+        run: |
+          node --version
+          npm --version
+          npx lhci --version
+          google-chrome --version
+      - name: Record execution context
+        run: |
+          lhci_version=$(npx lhci --version)
+          lighthouse_version=$(node -p 'require("./node_modules/lighthouse/package.json").version')
+
+          {
+            echo '## Lighthouse execution'
+            echo "- Timestamp (UTC): $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            echo "- Commit: $GITHUB_SHA"
+            echo "- Workflow context: $GITHUB_EVENT_NAME ($GITHUB_REF)"
+            echo "- Runner: $RUNNER_OS / $ImageOS"
+            echo "- Node: $(node --version); npm: $(npm --version)"
+            echo "- Lighthouse CI: $lhci_version; Lighthouse: $lighthouse_version"
+            echo "- Browser: $(google-chrome --version)"
+            echo '- Audited environment: local production-mode Jekyll output served at 127.0.0.1:4173'
+            echo '- Configuration: mobile and desktop presets; 7 routes; 3 runs per route/profile'
+          } >> "$GITHUB_STEP_SUMMARY"
+      - name: Lighthouse mobile audits
+        run: npm run lighthouse:mobile
+      - name: Lighthouse desktop audits
+        run: npm run lighthouse:desktop
+      - name: Summarize Lighthouse runs
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import glob, json, os
+          files = glob.glob('.lighthouseci/**/*.json', recursive=True)
+          summary = ['## Lighthouse CI results', '', f'- Report files discovered: {len(files)}', '']
+          for filename in files:
+              try:
+                  report = json.load(open(filename, encoding='utf-8'))
+                  categories = report.get('categories', {})
+                  audits = report.get('audits', {})
+                  device = 'mobile' if '/mobile/' in filename else ('desktop' if '/desktop/' in filename else 'unknown')
+                  critical = ['color-contrast', 'document-title', 'html-has-lang', 'image-alt', 'meta-description', 'canonical', 'crawlable-anchors', 'is-crawlable']
+                  metric_limits = {'largest-contentful-paint': 2500, 'cumulative-layout-shift': 0.1, 'total-blocking-time': 300, 'first-contentful-paint': 1800, 'speed-index': 3400}
+                  failed = [audit for audit in critical if audits.get(audit, {}).get('score') is not None and audits[audit]['score'] < 1]
+                  failed += [audit for audit, limit in metric_limits.items() if audits.get(audit, {}).get('numericValue') is not None and audits[audit]['numericValue'] > limit]
+                  failed += [f"category:{name}" for name, limit in [('performance', .90), ('accessibility', .95), ('best-practices', .95), ('seo', 1)] if categories.get(name, {}).get('score') is not None and categories[name]['score'] < limit]
+                  summary.append(f"- {device} {report.get('requestedUrl', filename)}: P {categories.get('performance', {}).get('score')} / A {categories.get('accessibility', {}).get('score')} / BP {categories.get('best-practices', {}).get('score')} / SEO {categories.get('seo', {}).get('score')}; LCP {audits.get('largest-contentful-paint', {}).get('displayValue', 'n/a')}; CLS {audits.get('cumulative-layout-shift', {}).get('displayValue', 'n/a')}; TBT {audits.get('total-blocking-time', {}).get('displayValue', 'n/a')}; FCP {audits.get('first-contentful-paint', {}).get('displayValue', 'n/a')}; Speed Index {audits.get('speed-index', {}).get('displayValue', 'n/a')}; failed assertions: {', '.join(failed) if failed else 'none'}")
+              except Exception as error:
+                  summary.append(f'- Could not parse {filename}: {error}')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as output:
+              output.write('\n'.join(summary) + '\n')
+          PY
+      - name: Upload Lighthouse diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-${{ github.run_id }}
+          path: .lighthouseci/
+          if-no-files-found: warn
+          retention-days: 14

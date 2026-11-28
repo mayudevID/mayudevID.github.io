@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.default_lang | escape }}">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% include seo.html %}
+
+    <meta name="google-site-verification" content="vvVXmwxXpFyMHO-Yhf4qhy7qRgbTwD_pnTpD8XuyDLY" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#f8fafc" />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+    <script src="/assets/js/site.js" defer></script>
+</head>
+<body>
+    {% assign published_insights = site.data.insights | where: 'status', 'published' %}
+    <a class="skip-link" href="#main-content">Skip to content / Langsung ke konten</a>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="site-brand" href="{% if page.lang == 'id' %}/id/{% else %}/en/{% endif %}#top-{{ page.lang }}" aria-label="MayudevID, {% if page.lang == 'id' %}kembali ke beranda{% else %}back to home{% endif %}">
+                <span class="brand-mark" aria-hidden="true">m<span>.</span></span>
+                <span>MayudevID</span>
+            </a>
+            <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+                <a href="{% if page.is_home %}#{% else %}{% if page.lang == 'id' %}/id/{% else %}/en/{% endif %}#{% endif %}projects-{{ page.lang }}">{% if page.lang == 'id' %}Proyek{% else %}Projects{% endif %}</a>
+                <a href="{% if page.is_home %}#{% else %}{% if page.lang == 'id' %}/id/{% else %}/en/{% endif %}#{% endif %}experience-{{ page.lang }}">{% if page.lang == 'id' %}Pengalaman{% else %}Experience{% endif %}</a>
+                <a href="{% if page.is_home %}#{% else %}{% if page.lang == 'id' %}/id/{% else %}/en/{% endif %}#{% endif %}skills-{{ page.lang }}">{% if page.lang == 'id' %}Keahlian{% else %}Skills{% endif %}</a>
+                {% if published_insights.size > 0 %}<a href="{% if page.lang == 'id' %}/id/insights/{% else %}/en/insights/{% endif %}">{% if page.lang == 'id' %}Wawasan Engineering{% else %}Engineering Insights{% endif %}</a>{% endif %}
+                <a href="{% if page.is_home %}#{% else %}{% if page.lang == 'id' %}/id/{% else %}/en/{% endif %}#{% endif %}contact-{{ page.lang }}">{% if page.lang == 'id' %}Kontak{% else %}Contact{% endif %}</a>
+            </nav>
+            <div class="header-actions">
+                <nav class="language-switch" aria-label="Language">
+                    <a href="{% if page.translation_url and page.lang == 'id' %}{{ page.translation_url }}{% elsif page.translation_url and page.lang == 'en' %}{{ page.url }}{% elsif page.is_home %}/en/{% elsif page.lang == 'id' %}/en/{% else %}/en/insights/{% endif %}" lang="en" hreflang="en"{% if page.lang == 'en' %} aria-current="page"{% endif %} aria-label="English">EN</a>
+                    <a href="{% if page.translation_url and page.lang == 'en' %}{{ page.translation_url }}{% elsif page.translation_url and page.lang == 'id' %}{{ page.url }}{% elsif page.is_home %}/id/{% elsif page.lang == 'id' %}/id/{% else %}/id/insights/{% endif %}" lang="id" hreflang="id"{% if page.lang == 'id' %} aria-current="page"{% endif %} aria-label="Bahasa Indonesia">ID</a>
+                </nav>
+                <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main id="main-content">
+        {{ content }}
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span>© <span data-current-year>2026</span> MayudevID</span>
+            <span>{% if page.lang == 'id' %}Dibuat dengan Jekyll · Di-host di GitHub Pages{% else %}Built with Jekyll · Hosted on GitHub Pages{% endif %}</span>
+            <a href="https://github.com/mayudevID" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GitHub ↗</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.DS_Store
+.agents
+skills-lock.json
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+# Added by code-review-graph
+.code-review-graph/
+node_modules/
+.lighthouseci/
+reports/

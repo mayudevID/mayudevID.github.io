@@ -1,0 +1,352 @@
+{% assign lang = include.lang %}
+{% if lang == 'id' %}
+{% assign cv_url = '/portfolio/cv_maulana_yusuf.pdf' %}
+{% else %}
+{% assign cv_url = '/portfolio/cv_maulana_yusuf_en.pdf' %}
+{% endif %}
+{% assign segments = include.content | split: '<!-- PORTFOLIO:SECTION -->' %}
+{% assign holy_smart = site.data.projects | where: 'project_id', 'holy-smart' | first %}
+{% assign holy_world = site.data.projects | where: 'project_id', 'holy-world' | first %}
+{% assign dtg_soms = site.data.projects | where: 'project_id', 'dtg-soms' | first %}
+{% assign ar_rauda = site.data.projects | where: 'project_id', 'ar-rauda' | first %}
+{% assign got_agency = site.data.projects | where: 'project_id', 'got-agency' | first %}
+{% assign ktadbrnr = site.data.projects | where: 'project_id', 'ktadbrnr' | first %}
+{% assign emcare = site.data.projects | where: 'project_id', 'emcare' | first %}
+{% if lang == 'id' %}
+{% assign header_about = '## Tentang Saya' %}
+{% assign header_experience = '## Pengalaman' %}
+{% assign header_education = '## Pendidikan' %}
+{% assign header_skills = '## Keterampilan' %}
+{% assign header_cert = '## Sertifikasi dan Pelatihan' %}
+{% assign header_projects = '## Proyek Unggulan' %}
+{% assign header_contact = '## Kontak' %}
+{% else %}
+{% assign header_about = '## About Me' %}
+{% assign header_experience = '## Experience' %}
+{% assign header_education = '## Education' %}
+{% assign header_skills = '## Skills' %}
+{% assign header_cert = '## Certifications and Training' %}
+{% assign header_projects = '## Featured Projects' %}
+{% assign header_contact = '## Contact' %}
+{% endif %}
+<div class="localized-page" data-language-content="{{ lang }}">
+    <section class="hero-section container" id="top-{{ lang }}" aria-labelledby="hero-title-{{ lang }}">
+        <div class="hero-content">
+            <div class="eyebrow"><span class="live-dot" aria-hidden="true"></span>Mobile Developer</div>
+            {% if lang == 'id' %}
+            <h1 id="hero-title-{{ lang }}">Halo, saya <span class="text-accent">Maulana Yusuf.</span><br>Saya membangun
+                aplikasi mobile yang andal.</h1>
+            <p class="hero-lead">Berfokus pada pengembangan aplikasi Android dan iOS dengan Flutter, integrasi teknologi
+                native, serta pengembangan fitur dari implementasi hingga rilis produksi.</p>
+            {% else %}
+            <h1 id="hero-title-{{ lang }}">Hi, I'm <span class="text-accent">Maulana Yusuf.</span><br>I build reliable
+                mobile experiences.</h1>
+            <p class="hero-lead">I develop Android and iOS apps with Flutter, native integrations, and end-to-end
+                feature delivery—from implementation to production releases.</p>
+            {% endif %}
+            <div class="hero-actions">
+                <a class="button button-primary" href="#projects-{{ lang }}">{% if lang == 'id' %}Lihat Proyek{% else
+                    %}Explore Projects{% endif %}<span aria-hidden="true">↗</span></a>
+                <a class="button button-secondary" href="{{ cv_url }}" download>{% if lang == 'id'
+                    %}Unduh CV{% else %}Download CV{% endif %}<span aria-hidden="true">↓</span></a>
+            </div>
+            <p class="hero-location"><span aria-hidden="true">◎</span> {% if lang == 'id' %}Tangerang Selatan,
+                Indonesia{% else %}South Tangerang, Indonesia{% endif %}</p>
+        </div>
+        <div class="hero-panel"
+            aria-label="{% if lang == 'id' %}Ringkasan fokus pengembangan{% else %}Development focus overview{% endif %}">
+            <div class="panel-top"><span class="panel-indicator" aria-hidden="true"></span> mobile-developer<span
+                    class="panel-extension">.profile</span><span class="panel-dots" aria-hidden="true">···</span></div>
+            <div class="panel-inner">
+                <div class="panel-label">{% if lang == 'id' %}AREA KEAHLIAN{% else %}WHAT I BUILD{% endif %}</div>
+                <div class="panel-line"><span class="panel-index">01</span>
+                    <div><strong>Android & iOS</strong><small>Flutter · Dart</small></div><span class="panel-symbol"
+                        aria-hidden="true">↗</span>
+                </div>
+                <div class="panel-line"><span class="panel-index">02</span>
+                    <div><strong>{% if lang == 'id' %}Integrasi Native{% else %}Native Integrations{% endif
+                            %}</strong><small>Kotlin · iOS APIs</small></div><span class="panel-symbol"
+                        aria-hidden="true">↗</span>
+                </div>
+                <div class="panel-line"><span class="panel-index">03</span>
+                    <div><strong>{% if lang == 'id' %}Aplikasi Produksi{% else %}Production Apps{% endif
+                            %}</strong><small>REST API · CI/CD · Release</small></div><span class="panel-symbol"
+                        aria-hidden="true">↗</span>
+                </div>
+                <div class="panel-footer"><span class="panel-check" aria-hidden="true">✓</span> {% if lang == 'id'
+                    %}Berorientasi pada stabilitas dan performa{% else %}Built for stability & performance{% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container about-section" aria-labelledby="about-title-{{ lang }}">
+        <div class="section-kicker">{% if lang == 'id' %}SEKILAS TENTANG SAYA{% else %}A LITTLE ABOUT ME{% endif %}
+        </div>
+        <div class="about-layout">
+            <h2 id="about-title-{{ lang }}">{% if lang == 'id' %}Dari ide hingga <span class="text-accent">aplikasi siap
+                    pakai.</span>{% else %}From idea to <span class="text-accent">production-ready apps.</span>{% endif
+                %}</h2>
+            <div class="prose prose-compact">{{ segments[1] | remove_first: header_about | markdownify }}</div>
+        </div>
+    </section>
+
+    <section class="section section-muted" id="projects-{{ lang }}" aria-labelledby="projects-title-{{ lang }}">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">{% if lang == 'id' %}PROYEK PILIHAN{% else %}SELECTED WORK{% endif %}</p>
+                    <h2 id="projects-title-{{ lang }}">{% if lang == 'id' %}Proyek <span
+                            class="text-accent">Unggulan</span>{% else %}Featured <span
+                            class="text-accent">Projects</span>{% endif %}</h2>
+                </div>
+                <p class="section-intro">{% if lang == 'id' %}Beberapa aplikasi yang saya kembangkan dan dukung dalam
+                    lingkungan profesional.{% else %}A selection of applications I've built and maintained in
+                    professional environments.{% endif %}</p>
+            </div>
+            <div class="featured-grid">
+                <article class="featured-card">
+                    <a class="featured-card-media media-holy-smart" href="#case-study-holy-smart-{{ lang }}"
+                        data-open-case-study
+                        aria-label="{% if lang == 'id' %}Lihat detail Holy Smart{% else %}Explore Holy Smart case study{% endif %}">
+                        {% include featured-screenshots.html project=holy_smart offset=0 lang=lang %}
+                    </a>
+                    <div class="featured-card-body">
+                        <p class="card-eyebrow">Flutter · React · Laravel</p>
+                        <h3>Holy Smart</h3>
+                        <p>{% if lang == 'id' %}{{ holy_smart[lang].summary }}{% else %}{{ holy_smart[lang].summary }}{% endif %}</p><a class="text-link"
+                            href="#case-study-holy-smart-{{ lang }}" data-open-case-study>{% if lang == 'id' %}Lihat
+                            detail proyek{% else %}View case study{% endif %} <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="featured-card">
+                    <a class="featured-card-media media-holy-world" href="#case-study-holy-world-{{ lang }}"
+                        data-open-case-study
+                        aria-label="{% if lang == 'id' %}Lihat detail Holy World{% else %}Explore Holy World case study{% endif %}">
+                        {% include featured-screenshots.html project=holy_world offset=1 lang=lang %}
+                    </a>
+                    <div class="featured-card-body">
+                        <p class="card-eyebrow">Flutter · Android · iOS</p>
+                        <h3>Holy World</h3>
+                        <p>{% if lang == 'id' %}{{ holy_world[lang].summary }}{% else %}{{ holy_world[lang].summary }}{% endif %}</p><a class="text-link"
+                            href="#case-study-holy-world-{{ lang }}" data-open-case-study>{% if lang == 'id' %}Lihat
+                            detail proyek{% else %}View case study{% endif %} <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="featured-card">
+                    <a class="featured-card-media media-dtg-soms" href="#case-study-dtg-soms-{{ lang }}"
+                        data-open-case-study
+                        aria-label="{% if lang == 'id' %}Lihat detail DTG SOMS{% else %}Explore DTG SOMS case study{% endif %}">
+                        {% include featured-screenshots.html project=dtg_soms offset=0 lang=lang %}
+                    </a>
+                    <div class="featured-card-body">
+                        <p class="card-eyebrow">Flutter · React · Laravel</p>
+                        <h3>DTG SOMS</h3>
+                        <p>{% if lang == 'id' %}{{ dtg_soms[lang].summary }}{% else %}{{ dtg_soms[lang].summary }}{% endif %}</p><a class="text-link" href="#case-study-dtg-soms-{{ lang }}"
+                            data-open-case-study>{% if lang == 'id' %}Lihat
+                            detail proyek{% else %}View case study{% endif %} <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="featured-card">
+                    <a class="featured-card-media media-ar-rauda" href="#case-study-ar-rauda-{{ lang }}"
+                        data-open-case-study
+                        aria-label="{% if lang == 'id' %}Lihat detail Ar-Rauda{% else %}Explore Ar-Rauda case study{% endif %}">
+                        {% include featured-screenshots.html project=ar_rauda offset=0 lang=lang %}
+                    </a>
+                    <div class="featured-card-body">
+                        <p class="card-eyebrow">Flutter · Audio · Live</p>
+                        <h3>Ar-Rauda</h3>
+                        <p>{% if lang == 'id' %}{{ ar_rauda[lang].summary }}{% else %}{{ ar_rauda[lang].summary }}{% endif %}</p><a class="text-link"
+                            href="#case-study-ar-rauda-{{ lang }}" data-open-case-study>{% if lang == 'id' %}Lihat
+                            detail proyek{% else %}View case study{% endif %} <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="featured-card">
+                    <a class="featured-card-media media-got-agency" href="#case-study-got-agency-{{ lang }}"
+                        data-open-case-study
+                        aria-label="{% if lang == 'id' %}Lihat detail GOT Agency{% else %}Explore GOT Agency case study{% endif %}">
+                        {% include featured-screenshots.html project=got_agency offset=0 lang=lang %}
+                    </a>
+                    <div class="featured-card-body">
+                        <p class="card-eyebrow">Flutter · Laravel · REST API</p>
+                        <h3>GOT Agency</h3>
+                        <p>{{ got_agency[lang].summary }}</p>
+                        <a class="text-link" href="#case-study-got-agency-{{ lang }}" data-open-case-study>{% if lang ==
+                            'id' %}Lihat detail proyek{% else %}View case study{% endif %} <span
+                                aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="featured-card">
+                    <a class="featured-card-media media-ktadbrnr" href="#case-study-ktadbrnr-{{ lang }}"
+                        data-open-case-study
+                        aria-label="{% if lang == 'id' %}Lihat detail KTADBRNR{% else %}Explore KTADBRNR case study{% endif %}">
+                        {% include featured-screenshots.html project=ktadbrnr offset=0 lang=lang %}
+                    </a>
+                    <div class="featured-card-body">
+                        <p class="card-eyebrow">Flutter · Android · iOS</p>
+                        <h3>KTADBRNR</h3>
+                        <p>{{ ktadbrnr[lang].summary }} {% if lang == 'id' %}100.000+ unduhan historis tercatat pada listing Google Play.{% else %}100,000+ historical downloads shown on its Google Play listing.{% endif %}</p>
+                        <p class="project-status">{% if lang == 'id' %}Proyek arsip · Februari 2026{% else %}Archived
+                            project · February 2026{% endif %}</p>
+                        <a class="text-link" href="#case-study-ktadbrnr-{{ lang }}" data-open-case-study>{% if lang ==
+                            'id' %}Lihat detail proyek{% else %}View case study{% endif %} <span
+                                aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="featured-card">
+                    <a class="featured-card-media media-emcare" href="#case-study-emcare-{{ lang }}"
+                        data-open-case-study
+                        aria-label="{% if lang == 'id' %}Lihat detail EMCare{% else %}Explore EMCare case study{% endif %}">
+                        {% include featured-screenshots.html project=emcare offset=0 lang=lang %}
+                    </a>
+                    <div class="featured-card-body">
+                        <p class="card-eyebrow">Flutter · Android · iOS</p>
+                        <h3>EMCare</h3>
+                        <p>{{ emcare[lang].summary }}</p>
+                        <a class="text-link" href="#case-study-emcare-{{ lang }}" data-open-case-study>{% if lang ==
+                            'id' %}Lihat detail proyek{% else %}View case study{% endif %} <span
+                                aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    {% assign published_insights = site.data.insights | where: 'status', 'published' %}
+    {% if published_insights.size > 0 %}
+    <section class="section insights-preview" aria-labelledby="insights-preview-title-{{ lang }}">
+        <div class="container">
+            <div class="section-heading">
+                <div><p class="section-kicker">{% if lang == 'id' %}CATATAN TEKNIS{% else %}ENGINEERING NOTES{% endif %}</p><h2 id="insights-preview-title-{{ lang }}">{% if lang == 'id' %}Wawasan Engineering{% else %}Engineering Insights{% endif %}</h2></div>
+                <a class="text-link" href="{% if lang == 'id' %}/id/insights/{% else %}/en/insights/{% endif %}">{% if lang == 'id' %}Lihat semua artikel{% else %}View all insights{% endif %} ↗</a>
+            </div>
+            <div class="insight-list" role="list" aria-label="{% if lang == 'id' %}Artikel terbaru{% else %}Recent articles{% endif %}">
+                {% for insight in published_insights limit:3 %}{% include insight-card.html insight=insight lang=lang %}{% endfor %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
+    <section class="section case-studies-section" aria-labelledby="case-studies-title-{{ lang }}">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">{% if lang == 'id' %}LEBIH DETAIL{% else %}A CLOSER LOOK{% endif %}</p>
+                    <h2 id="case-studies-title-{{ lang }}">{% if lang == 'id' %}Detail Proyek{% else %}Project Details{% endif %}</h2>
+                </div>
+                <p class="section-intro">{% if lang == 'id' %}Fitur utama, teknologi, screenshot, dan tautan aplikasi.{% else %}Features, technologies, screenshots, and app store links.{% endif %}</p>
+            </div>
+            <div class="case-studies-list">
+                {% assign professional_projects = site.data.projects | where: 'group', 'professional' %}
+                {% for project in professional_projects %}
+                <details class="case-study" id="case-study-{{ project.slug }}-{{ lang }}">
+                    <summary>
+                        <span class="case-study-number">{{ forloop.index | prepend: '0' }}</span>
+                        <span class="case-study-name">{{ project.name | escape }}</span>
+                        <span class="case-study-meta">
+                            {% if project.project_id == 'ktadbrnr' %}
+                            <small class="case-study-status is-archived">{% if lang == 'id' %}Proyek arsip{% else %}Archived project{% endif %}</small>
+                            {% else %}
+                            <small class="case-study-status">{% if lang == 'id' %}Detail &amp; screenshot{% else %}Details &amp; screenshots{% endif %}</small>
+                            {% endif %}
+                            <span class="details-chevron" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m6 9 6 6 6-6"/></svg></span>
+                        </span>
+                    </summary>
+                    <div class="prose case-study-content">{% include project-preview.html project=project lang=lang %}<p><a class="text-link" href="{% if lang == 'id' %}/id/projects/{{ project.slug }}/{% else %}/en/projects/{{ project.slug }}/{% endif %}">{% if lang == 'id' %}Baca studi kasus {{ project.name | escape }}{% else %}Read the {{ project.name | escape }} case study{% endif %}</a></p></div>
+                </details>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-muted" id="personal-projects-{{ lang }}"
+        aria-labelledby="personal-title-{{ lang }}">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">{% if lang == 'id' %}EKSPERIMEN & OPEN SOURCE{% else %}SIDE PROJECTS &
+                        OPEN SOURCE{% endif %}</p>
+                    <h2 id="personal-title-{{ lang }}">{% if lang == 'id' %}Proyek <span
+                            class="text-accent">Personal</span>{% else %}Personal <span
+                            class="text-accent">Projects</span>{% endif %}</h2>
+                </div>
+                <p class="section-intro">{% if lang == 'id' %}Proyek yang source code-nya dapat diperiksa langsung
+                    melalui GitHub.{% else %}Independent projects with code you can explore on GitHub.{% endif %}</p>
+            </div>
+            <div class="personal-grid">
+                {% assign personal_projects = site.data.projects | where: 'group', 'personal' %}
+                {% for project in personal_projects %}{% include project-card.html project=project lang=lang %}{% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="experience-{{ lang }}" aria-labelledby="experience-title-{{ lang }}">
+        <div class="container section-two-column">
+            <div class="section-aside">
+                <p class="section-kicker">{% if lang == 'id' %}PERJALANAN PROFESIONAL{% else %}PROFESSIONAL JOURNEY{%
+                    endif %}</p>
+                <h2 id="experience-title-{{ lang }}">{% if lang == 'id' %}Pengalaman <span
+                        class="text-accent">Kerja</span>{% else %}Work <span class="text-accent">Experience</span>{%
+                    endif %}</h2>
+                <p>{% if lang == 'id' %}Pengalaman membangun, memelihara, dan merilis produk mobile.{% else %}Experience
+                    building, maintaining, and releasing mobile applications.{% endif %}</p>
+            </div>
+            <div class="timeline prose">{{ segments[2] | remove_first: header_experience | markdownify }}</div>
+        </div>
+    </section>
+
+    <section class="section section-muted" id="skills-{{ lang }}" aria-labelledby="skills-title-{{ lang }}">
+        <div class="container section-two-column">
+            <div class="section-aside">
+                <p class="section-kicker">{% if lang == 'id' %}PERANGKAT & KEMAMPUAN{% else %}TOOLS & EXPERTISE{% endif
+                    %}</p>
+                <h2 id="skills-title-{{ lang }}">{% if lang == 'id' %}Keahlian <span class="text-accent">Teknis</span>{%
+                    else %}Technical <span class="text-accent">Skills</span>{% endif %}</h2>
+                <p>{% if lang == 'id' %}Teknologi dan pendekatan yang saya gunakan dalam pengembangan.{% else
+                    %}Technologies and practices I use in development.{% endif %}</p>
+            </div>
+            <div class="skills-panel prose">{{ segments[4] | remove_first: header_skills | markdownify }}</div>
+        </div>
+    </section>
+
+    <section class="section" id="education-{{ lang }}" aria-labelledby="education-title-{{ lang }}">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">{% if lang == 'id' %}LATAR BELAKANG{% else %}BACKGROUND{% endif %}</p>
+                    <h2 id="education-title-{{ lang }}">{% if lang == 'id' %}Pendidikan & <span
+                            class="text-accent">Sertifikasi</span>{% else %}Education & <span
+                            class="text-accent">Certifications</span>{% endif %}</h2>
+                </div>
+            </div>
+            <div class="education-grid">
+                <div class="info-card prose">
+                    <div class="card-label">{% if lang == 'id' %}PENDIDIKAN{% else %}EDUCATION{% endif %}</div>{{
+                    segments[3] | remove_first: header_education | markdownify }}
+                </div>
+                <div class="info-card prose">
+                    <div class="card-label">{% if lang == 'id' %}SERTIFIKASI & PELATIHAN{% else %}CERTIFICATIONS &
+                        TRAINING{% endif %}</div>{{ segments[5] | remove_first: header_cert | markdownify }}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact-section" id="contact-{{ lang }}" aria-labelledby="contact-title-{{ lang }}">
+        <div class="container contact-panel">
+            <div>
+                <p class="section-kicker">{% if lang == 'id' %}MARI TERHUBUNG{% else %}LET'S CONNECT{% endif %}</p>
+                <h2 id="contact-title-{{ lang }}">{% if lang == 'id' %}Mari bekerja <span>bersama.</span>{% else %}Let's
+                    build <span>something great.</span>{% endif %}</h2>
+                <p>{% if lang == 'id' %}Terbuka untuk peluang kerja dan kolaborasi di bidang mobile development.{% else
+                    %}Open to full-time roles and collaborations in mobile development.{% endif %}</p>
+                <div class="contact-actions"><a class="button button-light" href="mailto:ymaulana089@gmail.com">{% if
+                        lang == 'id' %}Kirim Email{% else %}Send an Email{% endif %} <span
+                            aria-hidden="true">↗</span></a><a class="button button-outline-light"
+                        href="https://www.linkedin.com/in/maulana-yusuf-b87393201" target="_blank"
+                        rel="noopener noreferrer">LinkedIn ↗</a></div>
+            </div>
+            <div class="contact-links prose">{{ segments[16] | remove_first: header_contact | markdownify }}</div>
+        </div>
+    </section>
+</div>

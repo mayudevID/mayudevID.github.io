@@ -1,0 +1,194 @@
+{% assign seo = site.data.seo[page.lang] %}
+{% assign project = nil %}
+{% if page.project_page %}{% assign project = site.data.projects | where: 'project_id', page.project_id | first %}{% endif %}
+{% assign project_locale = project[page.lang] %}
+{% assign author = page.author | default: site.data.seo.author %}
+{% assign title = page.title | default: project_locale.title | default: seo.title %}
+{% assign description = page.description | default: project_locale.description | default: seo.description %}
+{% assign robots = page.robots | default: site.data.seo.robots %}
+{% assign canonical_path = page.canonical_path | default: page.url %}
+{% assign canonical = page.canonical_url %}
+{% unless canonical %}
+{% assign canonical = canonical_path | prepend: site.url %}
+{% endunless %}
+{% assign image_path = page.social_image | default: project.social_image | default: site.data.seo.social_image %}
+{% assign image_url = image_path %}
+{% unless image_url contains '://' %}
+{% assign image_url = image_path | prepend: site.url %}
+{% endunless %}
+{% assign image_width = page.social_image_width | default: site.data.seo.social_image_width %}
+{% assign image_height = page.social_image_height | default: site.data.seo.social_image_height %}
+{% assign image_type = 'image/png' %}
+{% if image_path contains '.jpg' or image_path contains '.jpeg' %}{% assign image_type = 'image/jpeg' %}{% elsif image_path contains '.webp' %}{% assign image_type = 'image/webp' %}{% endif %}
+{% assign image_alt = page.social_image_alt | default: seo.social_image_alt %}
+{% if page.project_page %}{% capture project_image_alt %}{% if page.lang == 'id' %}Tangkapan layar proyek {{ project.name }}{% else %}{{ project.name }} project screenshot{% endif %}{% endcapture %}{% assign image_alt = page.social_image_alt | default: project_image_alt %}{% endif %}
+{% if page.article_page %}{% capture article_image_alt %}{% if page.lang == 'id' %}Ilustrasi artikel engineering: {{ title }}{% else %}Engineering article: {{ title }}{% endif %}{% endcapture %}{% assign image_alt = page.social_image_alt | default: article_image_alt %}{% endif %}
+{% assign alternates = page.hreflang | default: site.data.seo.hreflang %}
+<title>{{ title | escape }}</title>
+<meta name="description" content="{{ description | escape }}" />
+<meta name="author" content="{{ author | escape }}" />
+<meta name="robots" content="{{ robots | escape }}" />
+<link rel="canonical" href="{{ canonical | escape }}" />
+{% for alternate in alternates %}
+{% assign alternate_url = alternate[1] %}
+{% unless alternate_url contains '://' %}{% assign alternate_url = alternate_url | prepend: site.url %}{% endunless %}
+<link rel="alternate" hreflang="{{ alternate[0] | escape }}" href="{{ alternate_url | escape }}" />
+{% endfor %}
+
+<meta property="og:type" content="{% if page.article_page %}article{% else %}website{% endif %}" />
+<meta property="og:locale" content="{{ seo.locale | escape }}" />
+<meta property="og:locale:alternate" content="{{ seo.alternate_locale | escape }}" />
+<meta property="og:site_name" content="{{ site.data.seo.site_name | escape }}" />
+<meta property="og:title" content="{{ title | escape }}" />
+<meta property="og:description" content="{{ description | escape }}" />
+<meta property="og:url" content="{{ canonical | escape }}" />
+<meta property="og:image" content="{{ image_url | escape }}" />
+{% if image_path == site.data.seo.social_image %}<meta property="og:image:width" content="{{ image_width }}" />
+<meta property="og:image:height" content="{{ image_height }}" />{% endif %}
+<meta property="og:image:type" content="{{ image_type }}" />
+<meta property="og:image:alt" content="{{ image_alt | escape }}" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ title | escape }}" />
+<meta name="twitter:description" content="{{ description | escape }}" />
+<meta name="twitter:image" content="{{ image_url | escape }}" />
+<meta name="twitter:image:alt" content="{{ image_alt | escape }}" />
+{% if page.article_page %}<meta property="article:published_time" content="{{ page.date_published | date_to_xmlschema }}" />{% if page.date_modified %}<meta property="article:modified_time" content="{{ page.date_modified | date_to_xmlschema }}" />{% endif %}<meta property="article:section" content="{{ page.category | escape }}" />{% endif %}
+
+{% assign person = site.data.seo.person %}
+{% assign website_url = site.url | append: '/' %}
+{% assign profile_id = canonical | append: '#profilepage' %}
+{% assign webpage_id = canonical | append: '#webpage' %}
+{% assign work_id = canonical | append: '#case-study' %}
+{% assign breadcrumb_id = canonical | append: '#breadcrumb' %}
+{% if page.project_page or page.article_page or page.insights_index_page %}{% assign breadcrumb_home = site.url | append: '/en/' %}{% if page.lang == 'id' %}{% assign breadcrumb_home = site.url | append: '/id/' %}{% endif %}{% endif %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": {{ person.id | jsonify }},
+      "name": {{ person.name | jsonify }},
+      "alternateName": {{ person.alternate_name | jsonify }},
+      "jobTitle": {{ person.job_title | jsonify }},
+      "description": {{ person.description | jsonify }},
+      "url": {{ website_url | jsonify }},
+      "sameAs": {{ person.same_as | jsonify }},
+      "knowsAbout": {{ person.knows_about | jsonify }},
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": {{ person.alumni_of | jsonify }}
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": {{ site.data.seo.website_id | jsonify }},
+      "url": {{ website_url | jsonify }},
+      "name": {{ site.data.seo.site_name | jsonify }},
+      "inLanguage": ["en", "id"],
+      "publisher": { "@id": {{ person.id | jsonify }} }
+    },
+    {% if page.article_page %}{
+      "@type": "WebPage",
+      "@id": {{ webpage_id | jsonify }},
+      "url": {{ canonical | jsonify }},
+      "name": {{ title | jsonify }},
+      "description": {{ description | jsonify }},
+      "inLanguage": {{ page.lang | jsonify }},
+      "isPartOf": { "@id": {{ site.data.seo.website_id | jsonify }} },
+      "mainEntity": { "@id": {{ canonical | append: '#article' | jsonify }} },
+      "breadcrumb": { "@id": {{ breadcrumb_id | jsonify }} }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": {{ canonical | append: '#article' | jsonify }},
+      "headline": {{ title | jsonify }},
+      "description": {{ description | jsonify }},
+      "url": {{ canonical | jsonify }},
+      "inLanguage": {{ page.lang | jsonify }},
+      "datePublished": {{ page.date_published | date_to_xmlschema | jsonify }},
+      {% if page.date_modified %}"dateModified": {{ page.date_modified | date_to_xmlschema | jsonify }},{% endif %}
+      "author": { "@id": {{ person.id | jsonify }} },
+      "publisher": { "@id": {{ person.id | jsonify }} },
+      "articleSection": {{ page.category | jsonify }},
+      "about": {{ page.topics | jsonify }},
+      "image": {{ image_url | jsonify }},
+      "mainEntityOfPage": { "@id": {{ webpage_id | jsonify }} }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": {{ breadcrumb_id | jsonify }},
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": {% if page.lang == 'id' %}"Beranda"{% else %}"Home"{% endif %}, "item": {{ breadcrumb_home | jsonify }} },
+        { "@type": "ListItem", "position": 2, "name": {% if page.lang == 'id' %}"Wawasan Engineering"{% else %}"Engineering Insights"{% endif %}, "item": {{ site.url | append: page.insights_path | jsonify }} },
+        { "@type": "ListItem", "position": 3, "name": {{ title | jsonify }}, "item": {{ canonical | jsonify }} }
+      ]
+    }{% elsif page.insights_index_page %}{
+      "@type": "CollectionPage",
+      "@id": {{ webpage_id | jsonify }},
+      "url": {{ canonical | jsonify }},
+      "name": {{ title | jsonify }},
+      "description": {{ description | jsonify }},
+      "inLanguage": {{ page.lang | jsonify }},
+      "isPartOf": { "@id": {{ site.data.seo.website_id | jsonify }} },
+      "mainEntity": { "@id": {{ canonical | append: '#articles' | jsonify }} },
+      "breadcrumb": { "@id": {{ breadcrumb_id | jsonify }} }
+    },
+    {
+      "@type": "ItemList",
+      "@id": {{ canonical | append: '#articles' | jsonify }},
+      "itemListElement": [
+        {% assign published_insights = site.data.insights | where: 'status', 'published' %}{% assign first_item = true %}{% for insight in published_insights %}{% assign insight_path = insight.en_path %}{% assign insight_title = insight.title_en %}{% if page.lang == 'id' %}{% assign insight_path = insight.id_path %}{% assign insight_title = insight.title_id %}{% endif %}{% unless first_item %},{% endunless %}{ "@type": "ListItem", "position": {{ forloop.index }}, "url": {{ site.url | append: insight_path | jsonify }}, "name": {{ insight_title | jsonify }} }{% assign first_item = false %}{% endfor %}
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": {{ breadcrumb_id | jsonify }},
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": {% if page.lang == 'id' %}"Beranda"{% else %}"Home"{% endif %}, "item": {{ breadcrumb_home | jsonify }} },
+        { "@type": "ListItem", "position": 2, "name": {% if page.lang == 'id' %}"Wawasan Engineering"{% else %}"Engineering Insights"{% endif %}, "item": {{ canonical | jsonify }} }
+      ]
+    }{% elsif page.project_page %}{
+      "@type": "WebPage",
+      "@id": {{ webpage_id | jsonify }},
+      "url": {{ canonical | jsonify }},
+      "name": {{ title | jsonify }},
+      "description": {{ description | jsonify }},
+      "inLanguage": {{ page.lang | jsonify }},
+      "isPartOf": { "@id": {{ site.data.seo.website_id | jsonify }} },
+      "mainEntity": { "@id": {{ work_id | jsonify }} },
+      "breadcrumb": { "@id": {{ breadcrumb_id | jsonify }} }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": {{ work_id | jsonify }},
+      "name": {{ project.name | jsonify }},
+      "description": {{ description | jsonify }},
+      "url": {{ canonical | jsonify }},
+      "inLanguage": {{ page.lang | jsonify }},
+      "author": { "@id": {{ person.id | jsonify }} },
+      "about": {{ project.category_en | jsonify }},
+      "image": {{ image_url | jsonify }},
+      "mainEntityOfPage": { "@id": {{ webpage_id | jsonify }} }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": {{ breadcrumb_id | jsonify }},
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": {% if page.lang == 'id' %}"Beranda"{% else %}"Home"{% endif %}, "item": {{ breadcrumb_home | jsonify }} },
+        { "@type": "ListItem", "position": 2, "name": {{ project.name | jsonify }}, "item": {{ canonical | jsonify }} }
+      ]
+    }{% else %}{
+      "@type": "ProfilePage",
+      "@id": {{ profile_id | jsonify }},
+      "url": {{ canonical | jsonify }},
+      "name": {{ title | jsonify }},
+      "description": {{ description | jsonify }},
+      "inLanguage": {{ page.lang | jsonify }},
+      "isPartOf": { "@id": {{ site.data.seo.website_id | jsonify }} },
+      "mainEntity": { "@id": {{ person.id | jsonify }} }
+    }{% endif %}
+  ]
+}
+</script>

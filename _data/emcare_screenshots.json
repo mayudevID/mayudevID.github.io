@@ -1,0 +1,37 @@
+[
+  {
+    "url": "https://play-lh.googleusercontent.com/Gy8Wsh1o0NmNEZqF37jsA2-QtXTdn2Qoj1nlMlIUYf2CDs5nbp60K_IdNG3VUW916va-5tT99qdytJ35qulu9eU=s0",
+    "local_path": "/assets/projects/emcare/1.png",
+    "fallback_url": "https://play-lh.googleusercontent.com/Gy8Wsh1o0NmNEZqF37jsA2-QtXTdn2Qoj1nlMlIUYf2CDs5nbp60K_IdNG3VUW916va-5tT99qdytJ35qulu9eU=w526-h296",
+    "alt_id": "EMCare — Beranda dan layanan kesehatan",
+    "alt_en": "EMCare — Home and healthcare services"
+  },
+  {
+    "url": "https://play-lh.googleusercontent.com/6l4lHHf-appVrPfEmrzyNlv-H-Z8JX4DAPIZjtgyznE1WxCPFfP3IwQgyHLPFIF6oYUs26C8Q5AKNOPhxjpw=s0",
+    "local_path": "/assets/projects/emcare/2.png",
+    "fallback_url": "https://play-lh.googleusercontent.com/6l4lHHf-appVrPfEmrzyNlv-H-Z8JX4DAPIZjtgyznE1WxCPFfP3IwQgyHLPFIF6oYUs26C8Q5AKNOPhxjpw=w526-h296",
+    "alt_id": "EMCare — Pembuatan janji dokter",
+    "alt_en": "EMCare — Doctor appointment booking"
+  },
+  {
+    "url": "https://play-lh.googleusercontent.com/gUbFLijL2uRR2SidYFvGDQ7KFScojILf1z2XEy5TRtzaNs64rmxsh25b8ORY7ytxx1oXnGlLX8zKcRxZaiOuLA=s0",
+    "local_path": "/assets/projects/emcare/3.png",
+    "fallback_url": "https://play-lh.googleusercontent.com/gUbFLijL2uRR2SidYFvGDQ7KFScojILf1z2XEy5TRtzaNs64rmxsh25b8ORY7ytxx1oXnGlLX8zKcRxZaiOuLA=w526-h296",
+    "alt_id": "EMCare — Konsultasi virtual",
+    "alt_en": "EMCare — Virtual consultation"
+  },
+  {
+    "url": "https://play-lh.googleusercontent.com/nie1peBks2WFvCyqfhFoANcZ-kSi9sBT-SuuECJ-dhDbLlxNfKWpw0LGu2RhxmibTpLqlmk76CV-Yt6TRmnA=s0",
+    "local_path": "/assets/projects/emcare/4.png",
+    "fallback_url": "https://play-lh.googleusercontent.com/nie1peBks2WFvCyqfhFoANcZ-kSi9sBT-SuuECJ-dhDbLlxNfKWpw0LGu2RhxmibTpLqlmk76CV-Yt6TRmnA=w526-h296",
+    "alt_id": "EMCare — Informasi rekam medis",
+    "alt_en": "EMCare — Medical records"
+  },
+  {
+    "url": "https://play-lh.googleusercontent.com/lNta1BkF-sim5eZVjWyTIT0vVUd7xuhOHeUNWMypeNMunIVX4yrUrOIYBo1aul_xPmrvoTF99uEhO2gfQhqc=s0",
+    "local_path": "/assets/projects/emcare/5.png",
+    "fallback_url": "https://play-lh.googleusercontent.com/lNta1BkF-sim5eZVjWyTIT0vVUd7xuhOHeUNWMypeNMunIVX4yrUrOIYBo1aul_xPmrvoTF99uEhO2gfQhqc=w526-h296",
+    "alt_id": "EMCare — Pusat layanan spesialis",
+    "alt_en": "EMCare — Specialty centers"
+  }
+]

@@ -1,0 +1,16 @@
+{% assign featured_project = include.project %}
+{% if featured_project.screenshots_data %}
+    {% assign featured_shots = site.data[featured_project.screenshots_data] %}
+{% else %}
+    {% assign featured_shots = featured_project.screenshots %}
+{% endif %}
+{% assign featured_offset = include.offset | default: 0 %}
+{% for shot in featured_shots offset:featured_offset limit:3 %}
+    {% assign shot_src = shot.src | default: shot.local_path %}
+    {% if include.lang == 'id' %}
+        {% assign shot_alt = shot.alt_id %}
+    {% else %}
+        {% assign shot_alt = shot.alt_en %}
+    {% endif %}
+    <img src="{{ shot_src | escape }}" loading="lazy" decoding="async" alt="{{ shot_alt | escape }}">
+{% endfor %}

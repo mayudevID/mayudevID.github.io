@@ -1,0 +1,11 @@
+{
+  "pages": [
+    {"name": "English homepage", "url": "/en/"},
+    {"name": "Indonesian homepage", "url": "/id/"},
+    {"name": "Holy Smart", "url": "/en/projects/holy-smart/"},
+    {"name": "Ar-Rauda", "url": "/id/projects/ar-rauda/"},
+    {"name": "EMCare", "url": "/en/projects/emcare/"},
+    {"name": "KTADBRNR", "url": "/id/projects/ktadbrnr/"},
+    {"name": "Cling!", "url": "/en/projects/cling/"}
+  ]
+}

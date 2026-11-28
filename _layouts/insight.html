@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{% assign insight = site.data.insights | where: 'article_id', page.article_id | first %}
+<article class="insight-page container" aria-labelledby="insight-title">
+  <nav class="breadcrumbs" aria-label="{% if page.lang == 'id' %}Jejak navigasi{% else %}Breadcrumb{% endif %}">
+    <ol>
+      <li><a href="{% if page.lang == 'id' %}/id/{% else %}/en/{% endif %}">{% if page.lang == 'id' %}Beranda{% else %}Home{% endif %}</a></li>
+      <li><a href="{{ page.insights_path }}">{% if page.lang == 'id' %}Wawasan Engineering{% else %}Engineering Insights{% endif %}</a></li>
+      <li aria-current="page">{{ page.title | escape }}</li>
+    </ol>
+  </nav>
+  <header class="insight-header">
+    <p class="section-kicker">{{ page.category | escape }}</p>
+    <h1 id="insight-title">{{ page.title | escape }}</h1>
+    <p class="insight-summary">{{ page.summary | escape }}</p>
+    {% if page.date_published %}<p class="insight-date"><time datetime="{{ page.date_published | date_to_xmlschema }}">{{ page.date_published | date: "%B %-d, %Y" }}</time>{% if page.date_modified %} · {% if page.lang == 'id' %}Diperbarui{% else %}Updated{% endif %} <time datetime="{{ page.date_modified | date_to_xmlschema }}">{{ page.date_modified | date: "%B %-d, %Y" }}</time>{% endif %}</p>{% endif %}
+  </header>
+  <div class="insight-body prose">{{ content }}</div>
+  {% include related-projects.html article_id=page.article_id lang=page.lang %}
+  {% include related-insights.html article_id=page.article_id lang=page.lang %}
+  <p class="project-return"><a class="button button-primary" href="{{ page.insights_path }}">{% if page.lang == 'id' %}Kembali ke wawasan{% else %}Back to Engineering Insights{% endif %}</a></p>
+</article>

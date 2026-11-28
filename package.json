@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "@lhci/cli": "0.15.1"
+  },
+  "scripts": {
+    "lighthouse:mobile": "lhci autorun --config=lighthouserc.mobile.cjs",
+    "lighthouse:desktop": "lhci autorun --config=lighthouserc.desktop.cjs"
+  }
+}

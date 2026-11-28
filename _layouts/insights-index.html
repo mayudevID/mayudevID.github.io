@@ -1,0 +1,13 @@
+---
+layout: default
+---
+{% assign published_insights = site.data.insights | where: 'status', 'published' %}
+<section class="insights-index container" aria-labelledby="insights-title">
+  <nav class="breadcrumbs" aria-label="{% if page.lang == 'id' %}Jejak navigasi{% else %}Breadcrumb{% endif %}">
+    <ol><li><a href="{% if page.lang == 'id' %}/id/{% else %}/en/{% endif %}">{% if page.lang == 'id' %}Beranda{% else %}Home{% endif %}</a></li><li aria-current="page">{% if page.lang == 'id' %}Wawasan Engineering{% else %}Engineering Insights{% endif %}</li></ol>
+  </nav>
+  <header class="insight-header"><p class="section-kicker">{% if page.lang == 'id' %}CATATAN TEKNIS{% else %}ENGINEERING NOTES{% endif %}</p><h1 id="insights-title">{% if page.lang == 'id' %}Wawasan Engineering{% else %}Engineering Insights{% endif %}</h1><p class="insight-summary">{{ page.introduction | escape }}</p></header>
+  <div class="insight-list" role="list" aria-label="{% if page.lang == 'id' %}Daftar artikel{% else %}Articles{% endif %}">
+    {% for insight in published_insights %}{% include insight-card.html insight=insight lang=page.lang %}{% endfor %}
+  </div>
+</section>

@@ -1,0 +1,41 @@
+url: "https://mydv.my.id"
+title: "MayudevID"
+description: "Maulana Yusuf's Flutter and mobile development portfolio"
+author: "Maulana Yusuf"
+default_lang: en
+
+# Keep development-only files out of the published site.
+exclude:
+  - PORTFOLIO_GUIDE.md
+  - scripts
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - AGENTS.md
+  - CLAUDE.md
+  - CODEBUDDY.md
+  - GEMINI.md
+  - QODER.md
+  - opencode.jsonc
+  - skills-lock.json
+  - script.txt
+  - pages/en/portfolio.md
+  - pages/id/portfolio.md
+  - SEO_PHASE1_IMPLEMENTATION_REPORT.md
+  - SEO_PHASE2_IMPLEMENTATION_REPORT.md
+  - SEO_PHASE3_IMPLEMENTATION_REPORT.md
+  - SEO_PHASE4_IMPLEMENTATION_REPORT.md
+  - SEO_MONITORING_GUIDE.md
+  - package.json
+  - package-lock.json
+  - lighthouserc.*.cjs
+  - lighthouse-pages.json
+  - production-seo-report.*
+  - reports
+  - .lighthouseci
+  - node_modules
+  - .github
+  - ENGINEERING_INSIGHTS_GUIDE.md
+  - editorial/drafts
+  - assets/projects/holy_smart/web_screenshot.png
+  - assets/projects/dtg_soms/web_screenshot.png
